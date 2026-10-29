@@ -1,0 +1,69 @@
+<footer class="footer on-dark">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand brand--light" href="./" aria-label="{{site.name}} — Inicio">
+          <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+          <span class="brand__text"><b>All in One</b><small>Professional Services</small></span>
+        </a>
+        <p>Contabilidad, impuestos y trámites para personas y negocios. Todo lo que necesitas, con un solo equipo que te conoce.</p>
+        <div class="social">
+          <a href="{{site.facebook}}" aria-label="Facebook"><svg class="ic"><use href="#i-facebook"/></svg></a>
+          <a href="{{site.instagram}}" aria-label="Instagram"><svg class="ic"><use href="#i-instagram"/></svg></a>
+          <a href="{{site.linkedin}}" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Servicios">
+        <h2>Servicios</h2>
+        <a href="servicios.html#contabilidad">Contabilidad</a>
+        <a href="servicios.html#nomina">Nómina</a>
+        <a href="servicios.html#sales-tax">Sales Tax</a>
+        <a href="servicios.html#impuestos-personales">Impuestos personales</a>
+        <a href="servicios.html#impuestos-empresariales">Impuestos empresariales</a>
+        <a href="servicios.html#resolucion">Resolución de problemas</a>
+        <a href="servicios.html#estrategias">Estrategias fiscales</a>
+        <a href="servicios.html#notaria">Servicios de notaría</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Trámites e internacional">
+        <h2>Trámites</h2>
+        <a href="tramites.html#creacion-empresas">Creación de empresas</a>
+        <a href="tramites.html#itin">ITIN</a>
+        <a href="tramites.html#cierre-empresas">Cierre de empresas</a>
+        <h2 class="footer__h-gap">Internacional</h2>
+        <a href="impuestos-internacionales.html#personales">Ingresos internacionales</a>
+        <a href="impuestos-internacionales.html#socios-extranjeros">Socios extranjeros</a>
+        <a href="impuestos-internacionales.html#asesoria">Asesoría legal</a>
+      </nav>
+
+      <div class="footer__col">
+        <h2>Contacto</h2>
+        <a class="footer__contact" href="tel:{{site.phoneHref}}"><svg class="ic"><use href="#i-phone"/></svg>{{site.phone}}</a>
+        <a class="footer__contact" href="mailto:{{site.email}}"><svg class="ic"><use href="#i-mail"/></svg>{{site.email}}</a>
+        <p class="footer__contact"><svg class="ic"><use href="#i-pin"/></svg><span>{{site.address}}<br />{{site.city}}</span></p>
+        <p class="footer__contact"><svg class="ic"><use href="#i-clock"/></svg>{{site.hours}}</p>
+        <a class="footer__link-strong" href="quienes-somos.html">Conoce al equipo <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer__big" aria-hidden="true"><span>All in <em>One</em></span></div>
+
+    <div class="footer__bottom">
+      <p>© {{year}} {{site.name}}. Todos los derechos reservados.</p>
+      <p class="footer__note">La información de este sitio es general y no constituye asesoría legal o fiscal para tu caso. Agenda una consulta para revisarlo con nosotros.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/{{site.whatsapp}}" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg class="ic"><use href="#i-whatsapp"/></svg>
+</a>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/motion.js" defer></script>
+</body>
+</html>

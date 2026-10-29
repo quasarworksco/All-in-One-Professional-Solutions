@@ -1,0 +1,102 @@
+<!--meta {"title":"Contacto — Agenda tu consulta | All in One Professional Services","description":"Agenda tu consulta con All in One Professional Services. Llámanos, escríbenos por WhatsApp o envíanos tu caso y te respondemos en menos de un día hábil.","nav":"contacto"} -->
+<section class="page-hero">
+  <div class="hero__grid-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="page-hero__in">
+      <nav class="crumbs" aria-label="Ruta"><a href="./">Inicio</a><span aria-hidden="true">/</span><span>Contacto</span></nav>
+      <p class="eyebrow eyebrow--light">Contacto</p>
+      <h1>Hablemos de <em>tu caso.</em></h1>
+      <p class="lead">Cuéntanos qué necesitas y te respondemos en menos de un día hábil con los siguientes pasos y una cotización clara.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="agenda">
+  <div class="container contact">
+    <div class="contact__info reveal">
+      <a class="info" href="tel:{{site.phoneHref}}"><span class="card__ic"><svg class="ic"><use href="#i-phone"/></svg></span><span><b>Llámanos</b><span>{{site.phone}}</span></span></a>
+      <a class="info" href="https://wa.me/{{site.whatsapp}}" target="_blank" rel="noopener"><span class="card__ic"><svg class="ic"><use href="#i-whatsapp"/></svg></span><span><b>WhatsApp</b><span>Escríbenos y te respondemos en horario de oficina</span></span></a>
+      <a class="info" href="mailto:{{site.email}}"><span class="card__ic"><svg class="ic"><use href="#i-mail"/></svg></span><span><b>Correo</b><span>{{site.email}}</span></span></a>
+      <div class="info"><span class="card__ic"><svg class="ic"><use href="#i-pin"/></svg></span><span><b>Oficina</b><span>{{site.address}}<br />{{site.city}}</span></span></div>
+      <div class="info"><span class="card__ic"><svg class="ic"><use href="#i-clock"/></svg></span><span style="flex:1"><b>Horario</b>
+        <ul class="hours"><li>Lunes a Viernes <b>9:00 am – 6:00 pm</b></li><li>Sábado <b>Con cita</b></li><li>Domingo <b>Cerrado</b></li></ul></span></div>
+    </div>
+
+    <form class="form reveal" id="form-contacto" data-to="{{site.email}}" novalidate>
+      <h2>Agenda tu consulta</h2>
+      <p>Completa el formulario y nos pondremos en contacto contigo.</p>
+
+      <div class="form__grid">
+        <div class="field">
+          <label for="f-nombre">Nombre completo</label>
+          <input id="f-nombre" name="nombre" type="text" autocomplete="name" required />
+          <span class="field__err">Escribe tu nombre.</span>
+        </div>
+        <div class="field">
+          <label for="f-telefono">Teléfono</label>
+          <input id="f-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+()\-\s]{7,}" required />
+          <span class="field__err">Escribe un teléfono válido.</span>
+        </div>
+        <div class="field form__full">
+          <label for="f-correo">Correo electrónico</label>
+          <input id="f-correo" name="correo" type="email" autocomplete="email" required />
+          <span class="field__err">Escribe un correo válido.</span>
+        </div>
+        <div class="field form__full">
+          <label for="f-servicio">¿En qué te podemos ayudar?</label>
+          <select id="f-servicio" name="servicio" required>
+            <option value="">Selecciona un servicio</option>
+            <optgroup label="Servicios">
+              <option>Contabilidad</option>
+              <option>Nómina</option>
+              <option>Sales Tax</option>
+              <option>Impuestos personales</option>
+              <option>Impuestos empresariales</option>
+              <option>Resolución de problemas de impuestos</option>
+              <option>Estrategias fiscales</option>
+              <option>Servicios de notaría</option>
+            </optgroup>
+            <optgroup label="Trámites">
+              <option>Creación y registro de empresas</option>
+              <option>Solicitud y renovación de ITIN</option>
+              <option>Cierre y disolución de empresas</option>
+            </optgroup>
+            <optgroup label="Impuestos internacionales">
+              <option>Declaración personal con ingresos internacionales</option>
+              <option>Declaración empresarial con socios extranjeros</option>
+              <option>Asesoría en requisitos de ley internacionales</option>
+            </optgroup>
+            <option>Otro / No estoy seguro</option>
+          </select>
+          <span class="field__err">Elige una opción.</span>
+        </div>
+        <fieldset class="field form__full" style="border:0;padding:0;margin:0">
+          <legend style="font-size:.86rem;font-weight:700;margin-bottom:.5rem">Soy</legend>
+          <div class="chips">
+            <label><input type="radio" name="perfil" value="Persona" checked /><span>Persona / familia</span></label>
+            <label><input type="radio" name="perfil" value="Negocio" /><span>Dueño de negocio</span></label>
+            <label><input type="radio" name="perfil" value="Contribuyente extranjero" /><span>Contribuyente extranjero</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="field form__full" style="border:0;padding:0;margin:0">
+          <legend style="font-size:.86rem;font-weight:700;margin-bottom:.5rem">Prefiero que me contacten por</legend>
+          <div class="chips">
+            <label><input type="radio" name="canal" value="Llamada" checked /><span>Llamada</span></label>
+            <label><input type="radio" name="canal" value="WhatsApp" /><span>WhatsApp</span></label>
+            <label><input type="radio" name="canal" value="Correo" /><span>Correo</span></label>
+          </div>
+        </fieldset>
+        <div class="field form__full">
+          <label for="f-mensaje">Cuéntanos brevemente tu caso <span style="font-weight:500;color:var(--ink-soft)">(opcional)</span></label>
+          <textarea id="f-mensaje" name="mensaje"></textarea>
+        </div>
+      </div>
+
+      <div class="form__foot">
+        <small><svg class="ic"><use href="#i-lock"/></svg>Tu información es confidencial.</small>
+        <button class="btn btn--primary btn--lg" type="submit">Enviar solicitud <svg class="ic"><use href="#i-arrow"/></svg></button>
+      </div>
+      <p class="form__ok" role="status">¡Gracias! Se abrió tu correo con el mensaje listo para enviar. Si no se abrió, escríbenos a {{site.email}} o llámanos al {{site.phone}}.</p>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,91 @@
+<!-- @include icons -->
+
+<div class="preloader" aria-hidden="true">
+  <div class="preloader__in">
+    <svg class="preloader__mark" viewBox="0 0 48 48" fill="none" stroke-linecap="round"><circle cx="24" cy="24" r="19" stroke="currentColor" stroke-width="3.2"/><path d="M15 31v-4M21 31v-9M27 31V18" stroke="currentColor" stroke-width="3.6"/><path d="M33 31V13" stroke="#d9ac52" stroke-width="3.6"/></svg>
+    <div class="preloader__word"><span>All</span>&nbsp;<span>in</span>&nbsp;<span>One</span></div>
+    <div class="preloader__bar"><i></i></div>
+  </div>
+  <span class="preloader__num">0</span>
+</div>
+
+<div class="topbar">
+  <div class="container topbar__in">
+    <p class="topbar__item"><svg class="ic"><use href="#i-pin"/></svg><span>{{site.address}}, {{site.city}}</span></p>
+    <div class="topbar__right">
+      <p class="topbar__item"><svg class="ic"><use href="#i-clock"/></svg><span>{{site.hours}}</span></p>
+      <a class="topbar__item topbar__phone" href="tel:{{site.phoneHref}}"><svg class="ic"><use href="#i-phone"/></svg><span>{{site.phone}}</span></a>
+      <span class="topbar__lang" title="Atendemos en español e inglés">ES · EN</span>
+    </div>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="container header__in">
+    <a class="brand" href="./" aria-label="{{site.name}} — Inicio">
+      <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+      <span class="brand__text"><b>All in One</b><small>Professional Services</small></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Principal">
+      <div class="nav__head">
+        <span class="brand__text"><b>All in One</b><small>Professional Services</small></span>
+        <button class="icon-btn" type="button" data-nav-close aria-label="Cerrar menú"><svg class="ic"><use href="#i-close"/></svg></button>
+      </div>
+
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="quienes-somos.html"{{active:nosotros}}>Quiénes Somos</a></li>
+
+        <li class="nav__item has-menu">
+          <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-servicios"{{active:servicios}}>Servicios <svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
+          <div class="menu menu--mega" id="menu-servicios">
+            <div class="menu__grid">
+              <a class="menu__link" href="servicios.html#contabilidad"><span class="menu__ic"><svg class="ic"><use href="#i-ledger"/></svg></span><span><b>Contabilidad</b><small>Bookkeeping mensual y estados financieros</small></span></a>
+              <a class="menu__link" href="servicios.html#nomina"><span class="menu__ic"><svg class="ic"><use href="#i-payroll"/></svg></span><span><b>Nómina</b><small>Payroll, depósitos y reportes trimestrales</small></span></a>
+              <a class="menu__link" href="servicios.html#sales-tax"><span class="menu__ic"><svg class="ic"><use href="#i-receipt"/></svg></span><span><b>Sales Tax</b><small>Permisos, cálculo y presentación</small></span></a>
+              <a class="menu__link" href="servicios.html#impuestos-personales"><span class="menu__ic"><svg class="ic"><use href="#i-user"/></svg></span><span><b>Impuestos personales</b><small>Declaraciones individuales y familiares</small></span></a>
+              <a class="menu__link" href="servicios.html#impuestos-empresariales"><span class="menu__ic"><svg class="ic"><use href="#i-building"/></svg></span><span><b>Impuestos empresariales</b><small>LLC, S-Corp, C-Corp y sociedades</small></span></a>
+              <a class="menu__link" href="servicios.html#resolucion"><span class="menu__ic"><svg class="ic"><use href="#i-shield"/></svg></span><span><b>Resolución de problemas</b><small>Cartas del IRS, auditorías y deudas</small></span></a>
+              <a class="menu__link" href="servicios.html#estrategias"><span class="menu__ic"><svg class="ic"><use href="#i-target"/></svg></span><span><b>Estrategias fiscales</b><small>Planificación para pagar lo justo</small></span></a>
+              <a class="menu__link" href="servicios.html#notaria"><span class="menu__ic"><svg class="ic"><use href="#i-stamp"/></svg></span><span><b>Servicios de notaría</b><small>Con notario público asociado</small></span></a>
+            </div>
+            <a class="menu__all" href="servicios.html">Ver todos los servicios <svg class="ic"><use href="#i-arrow"/></svg></a>
+          </div>
+        </li>
+
+        <li class="nav__item has-menu">
+          <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-tramites"{{active:tramites}}>Trámites <svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
+          <div class="menu" id="menu-tramites">
+            <a class="menu__link" href="tramites.html#creacion-empresas"><span class="menu__ic"><svg class="ic"><use href="#i-briefcase"/></svg></span><span><b>Creación y registro de empresas</b><small>LLC y corporaciones, EIN incluido</small></span></a>
+            <a class="menu__link" href="tramites.html#itin"><span class="menu__ic"><svg class="ic"><use href="#i-idcard"/></svg></span><span><b>Solicitud y renovación de ITIN</b><small>Formulario W-7 de principio a fin</small></span></a>
+            <a class="menu__link" href="tramites.html#cierre-empresas"><span class="menu__ic"><svg class="ic"><use href="#i-archive"/></svg></span><span><b>Cierre y disolución de empresas</b><small>Cierre ordenado ante el estado y el IRS</small></span></a>
+            <a class="menu__all" href="tramites.html">Ver todos los trámites <svg class="ic"><use href="#i-arrow"/></svg></a>
+          </div>
+        </li>
+
+        <li class="nav__item has-menu">
+          <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-internacional"{{active:internacional}}>Impuestos Internacionales <svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
+          <div class="menu" id="menu-internacional">
+            <a class="menu__link" href="impuestos-internacionales.html#personales"><span class="menu__ic"><svg class="ic"><use href="#i-globe"/></svg></span><span><b>Declaraciones personales con ingresos internacionales</b><small>Cuentas, rentas y salarios del exterior</small></span></a>
+            <a class="menu__link" href="impuestos-internacionales.html#socios-extranjeros"><span class="menu__ic"><svg class="ic"><use href="#i-handshake"/></svg></span><span><b>Declaraciones empresariales con socios extranjeros</b><small>Sociedades y LLC con dueños fuera de EE. UU.</small></span></a>
+            <a class="menu__link" href="impuestos-internacionales.html#asesoria"><span class="menu__ic"><svg class="ic"><use href="#i-scale"/></svg></span><span><b>Asesoría en requisitos de ley</b><small>Para ingresos internacionales y contribuyentes extranjeros</small></span></a>
+            <a class="menu__all" href="impuestos-internacionales.html">Ver impuestos internacionales <svg class="ic"><use href="#i-arrow"/></svg></a>
+          </div>
+        </li>
+
+        <li class="nav__item"><a class="nav__link" href="contacto.html"{{active:contacto}}>Contacto</a></li>
+      </ul>
+
+      <div class="nav__foot">
+        <a class="btn btn--gold btn--block" href="contacto.html#agenda">Agenda tu consulta <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a class="nav__contact" href="tel:{{site.phoneHref}}"><svg class="ic"><use href="#i-phone"/></svg>{{site.phone}}</a>
+      </div>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--primary header__cta" href="contacto.html#agenda">Agenda tu consulta <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <button class="icon-btn header__burger" type="button" data-nav-open aria-controls="nav" aria-expanded="false" aria-label="Abrir menú"><svg class="ic"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="scrim" data-nav-close hidden></div>
