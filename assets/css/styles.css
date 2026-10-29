@@ -546,10 +546,14 @@ body.nav-hidden .subnav { top: 0; }
 .footer__big { display: flex; justify-content: space-between; margin: clamp(60px, 9vw, 130px) 0 20px; font-size: clamp(56px, 15.5vw, 230px); font-weight: 600; letter-spacing: -.07em; line-height: .8; color: var(--white); overflow: hidden; padding-bottom: .06em; }
 .footer__big span { display: inline-block; }
 .footer__big span:last-child { font-weight: var(--light); letter-spacing: -.05em;  color: var(--gold); }
-.footer__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 40px; padding-top: 24px; border-top: 1px solid var(--line-l); font-size: 13px; }
+.footer__bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 40px; padding-top: 24px; border-top: 1px solid var(--line-l); font-size: 13px; }
 .footer__note { flex-basis: 100%; max-width: 70ch; color: rgba(255,255,255,.4); }
-.footer__by a { color: var(--white); border-bottom: 1px solid rgba(255,255,255,.35); transition: border-color .3s, color .3s; }
-.footer__by a:hover { color: var(--gold); border-color: var(--gold); }
+/* Sello "Powered by DGP" */
+.dgp-badge { display: inline-flex; align-items: center; gap: 9px; height: 34px; padding: 0 14px 0 8px; border: 1px solid var(--line-l); border-radius: 999px; font-size: 12px; letter-spacing: .02em; color: rgba(255,255,255,.6); transition: border-color .4s, color .4s, background .4s; }
+.dgp-badge svg { width: 20px; height: 20px; --logo-ink: #fff; transition: transform .6s var(--ease); }
+.dgp-badge b { font-weight: 600; color: var(--white); letter-spacing: .04em; }
+.dgp-badge:hover { border-color: rgba(255,255,255,.4); background: rgba(255,255,255,.05); color: var(--white); }
+.dgp-badge:hover svg { transform: rotate(-12deg) scale(1.08); }
 
 .wa-float { position: fixed; right: 22px; bottom: 22px; z-index: 80; width: 58px; height: 58px; border-radius: 50%; background: var(--ink); color: var(--white); display: grid; place-items: center; border: 1px solid rgba(255,255,255,.3); box-shadow: 0 14px 30px -10px rgba(0,0,0,.5); transform: scale(0); transition: transform .6s var(--ease); }
 .wa-float.is-visible { transform: scale(1); }
