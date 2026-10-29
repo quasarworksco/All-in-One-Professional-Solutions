@@ -338,6 +338,17 @@ body.menu-open .mmenu__row:nth-child(5) { transition-delay: .54s; }
 .values li { border-top: 1px solid currentColor; padding-top: 16px; font-weight: var(--light); letter-spacing: -.05em; font-size: clamp(28px, 2.6vw, 40px); line-height: 1; display: grid; gap: 10px; }
 .values li span { font-family: var(--sans); font-style: normal; font-size: 13px; color: var(--grey); line-height: 1.4; }
 
+/* Internacional (inicio): foto y lista con la misma altura */
+.intl { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(40px, 6vw, 100px); align-items: stretch; }
+.intl .visual { min-height: 460px; }
+.intl .frame { aspect-ratio: auto; height: 100%; }
+.intl .badge { right: auto; left: -40px; bottom: 40px; }
+.intl__list { display: flex; flex-direction: column; justify-content: space-between; gap: 40px; }
+.intl__list .nlist { margin: 0; }
+.intl__list .nlist a { padding: 30px 0; }
+.intl__list .btn { align-self: flex-start; }
+@media (max-width: 1100px) { .intl { grid-template-columns: 1fr; } .intl .visual { min-height: 0; } .intl .frame { aspect-ratio: 5 / 4; height: auto; } .intl .badge { left: auto; right: 10px; bottom: -30px; } }
+
 /* Lista numerada con líneas (internacional, etc.) */
 .nlist { list-style: none; margin: 40px 0 0; padding: 0; border-top: 1px solid currentColor; }
 .nlist a, .nlist > li > div { display: grid; grid-template-columns: 56px 1fr 40px; gap: 16px; align-items: start; padding: 26px 0; border-bottom: 1px solid var(--line); transition: padding .6s var(--ease); }
@@ -345,8 +356,10 @@ body.menu-open .mmenu__row:nth-child(5) { transition-delay: .54s; }
 .nlist a:hover { padding-left: 12px; }
 .nlist small { font-weight: var(--light); font-size: 26px; line-height: 1; color: var(--gold); }
 .nlist b { display: block; font-size: clamp(21px, 1.9vw, 28px); font-weight: 500; letter-spacing: -.03em; line-height: 1.12; margin-bottom: 8px; }
-.nlist span { color: var(--grey-d); font-size: 15.5px; }
-.dark .nlist span { color: rgba(255,255,255,.6); }
+.nlist span span { color: var(--grey-d); font-size: 15.5px; }
+.nlist b { color: var(--ink); }
+.dark .nlist b { color: var(--white); }
+.dark .nlist span span { color: rgba(255,255,255,.6); }
 .nlist .ic { width: 24px; height: 24px; justify-self: end; margin-top: 4px; transition: transform .6s var(--ease); }
 .nlist a:hover .ic { transform: rotate(-45deg); color: var(--gold); }
 
