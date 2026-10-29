@@ -62,7 +62,7 @@ GitHub Pages sigue funcionando en paralelo con su propia dirección.
 
 ## Animaciones
 
-- Loader de 1.2 s (el logo se dibuja como una gráfica y la pantalla se abre en dos); sale solo la primera vez que alguien entra al sitio
+- Loader de 1.5 s (el logo se dibuja como una gráfica y la pantalla se abre en dos); sale solo la primera vez que alguien entra al sitio
 - Hero con zoom de la foto, títulos por líneas y palabras que rotan (“en regla / al día / en orden / sin estrés”)
 - Scroll suave con Lenis y parallax en heroes e imágenes
 - Navegación que se oculta al bajar y reaparece al subir
