@@ -534,7 +534,9 @@ body.nav-hidden .subnav { top: 0; }
 .footer__big span { display: inline-block; }
 .footer__big span:last-child { font-weight: var(--light); letter-spacing: -.05em;  color: var(--gold); }
 .footer__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 40px; padding-top: 24px; border-top: 1px solid var(--line-l); font-size: 13px; }
-.footer__bottom p:last-child { max-width: 70ch; }
+.footer__note { flex-basis: 100%; max-width: 70ch; color: rgba(255,255,255,.4); }
+.footer__by a { color: var(--white); border-bottom: 1px solid rgba(255,255,255,.35); transition: border-color .3s, color .3s; }
+.footer__by a:hover { color: var(--gold); border-color: var(--gold); }
 
 .wa-float { position: fixed; right: 22px; bottom: 22px; z-index: 80; width: 58px; height: 58px; border-radius: 50%; background: var(--ink); color: var(--white); display: grid; place-items: center; border: 1px solid rgba(255,255,255,.3); box-shadow: 0 14px 30px -10px rgba(0,0,0,.5); transform: scale(0); transition: transform .6s var(--ease); }
 .wa-float.is-visible { transform: scale(1); }
