@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<script>
+  // "js" habilita los estados iniciales de animación; "intro" muestra el preloader
+  // solo en la primera página vista de la sesión y si no se pidió reducir movimiento.
+  (function (d) {
+    d.classList.add("js");
+    try {
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches && !sessionStorage.getItem("aio-intro")) d.classList.add("intro");
+    } catch (e) {}
+  })(document.documentElement);
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>{{page.title}}</title>
+<meta name="description" content="{{page.description}}" />
+<meta name="theme-color" content="#0b1310" />
+<link rel="canonical" href="{{page.canonical}}" />
+{{page.extraHead}}
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="{{site.name}}" />
+<meta property="og:url" content="{{page.canonical}}" />
+<meta property="og:title" content="{{page.title}}" />
+<meta property="og:description" content="{{page.description}}" />
+<meta property="og:image" content="{{site.url}}/assets/img/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="es_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{page.title}}" />
+<meta name="twitter:description" content="{{page.description}}" />
+<meta name="twitter:image" content="{{site.url}}/assets/img/og-image.jpg" />
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="preload" href="assets/fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin />
+{{page.preload}}
+<link rel="stylesheet" href="assets/css/styles.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "{{site.name}}",
+  "url": "{{site.url}}/",
+  "logo": "{{site.url}}/assets/img/favicon.svg",
+  "telephone": "{{site.phoneHref}}",
+  "email": "{{site.email}}",
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "address": { "@type": "PostalAddress", "addressLocality": "Richmond", "addressRegion": "TX", "addressCountry": "US" },
+  "availableLanguage": ["es", "en"],
+  "areaServed": "US",
+  "knowsAbout": ["Contabilidad", "Nómina", "Sales tax", "Impuestos personales", "Impuestos empresariales", "Resolución de problemas con el IRS", "Estrategias fiscales", "ITIN", "Formación de empresas", "Impuestos internacionales"]
+}
+</script>
+</head>
+<body class="{{page.bodyClass}}">
+<a class="skip" href="#contenido">Saltar al contenido</a>

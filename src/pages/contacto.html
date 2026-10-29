@@ -1,0 +1,65 @@
+<!--meta {"title":"Contacto — Agenda tu consulta | All in One Professional Services","description":"Agenda tu consulta con All in One Professional Services. Llámanos, escríbenos por WhatsApp o envíanos tu caso y te respondemos en menos de un día hábil.","nav":"contacto","hero":"personales.webp"} -->
+<section class="phero">
+  <div class="hero__media"><img src="assets/img/photos/personales.webp" alt="Pareja firmando documentos en un escritorio" fetchpriority="high" decoding="async" /></div>
+  <div class="hero__shade"></div>
+  <div class="container phero__in">
+    <nav class="crumbs" aria-label="Ruta" data-hero><a href="./">Inicio</a><span>/</span><span>Contacto</span></nav>
+    <h1 class="phero__title">Hablemos de <em>tu caso.</em></h1>
+    <div class="phero__foot" data-hero>
+      <p>Cuéntanos qué necesitas y te respondemos en menos de un día hábil con los siguientes pasos y una cotización clara.</p>
+      <div class="phero__index"><a href="tel:{{site.phoneHref}}">{{site.phone}}</a><a href="mailto:{{site.email}}">{{site.email}}</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="agenda">
+  <div class="container contact__grid">
+    <div>
+      <p class="label"><b>(01)</b> Contacto</p>
+      <h2 class="h2" data-split>Estamos <em>para ayudarte.</em></h2>
+      <p class="lead" data-reveal>Visítanos en la oficina o trabajemos a distancia: por teléfono, videollamada o correo, enviando tus documentos de forma segura.</p>
+      <ul class="contact__list" data-reveal>
+        <li><small>Teléfono</small><a href="tel:{{site.phoneHref}}">{{site.phone}}</a></li>
+        <li><small>WhatsApp</small><a href="https://wa.me/{{site.whatsapp}}" target="_blank" rel="noopener">Escríbenos</a></li>
+        <li><small>Correo</small><a href="mailto:{{site.email}}">{{site.email}}</a></li>
+        <li><small>Oficina</small><span>{{site.address}}, {{site.city}}</span></li>
+        <li><small>Horario</small><span>{{site.hours}}</span></li>
+      </ul>
+    </div>
+
+    <form class="form" id="form-contacto" data-to="{{site.email}}" novalidate data-reveal>
+      <div class="form__head"><h2>Agenda tu consulta</h2><p>Completa el formulario y nos pondremos en contacto contigo.</p></div>
+      <fieldset class="chips">
+        <legend>Soy</legend>
+        <label><input type="radio" name="perfil" value="Persona / familia" checked /><span>Persona / familia</span></label>
+        <label><input type="radio" name="perfil" value="Dueño de negocio" /><span>Dueño de negocio</span></label>
+        <label><input type="radio" name="perfil" value="Contribuyente extranjero" /><span>Contribuyente extranjero</span></label>
+      </fieldset>
+      <div class="field-row">
+        <div class="field"><input id="f-nombre" name="nombre" type="text" autocomplete="name" placeholder=" " required /><label for="f-nombre">Nombre completo</label><span class="field__err">Escribe tu nombre</span></div>
+        <div class="field"><input id="f-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+()\-\s]{7,}" placeholder=" " required /><label for="f-telefono">Teléfono</label><span class="field__err">Teléfono no válido</span></div>
+      </div>
+      <div class="field"><input id="f-correo" name="correo" type="email" autocomplete="email" placeholder=" " required /><label for="f-correo">Correo electrónico</label><span class="field__err">Correo no válido</span></div>
+      <div class="field field--select">
+        <select id="f-servicio" name="servicio" required>
+          <option value="">Selecciona un servicio</option>
+          <optgroup label="Servicios"><option>Contabilidad</option><option>Nómina</option><option>Sales Tax</option><option>Impuestos personales</option><option>Impuestos empresariales</option><option>Resolución de problemas de impuestos</option><option>Estrategias fiscales</option><option>Servicios de notaría</option></optgroup>
+          <optgroup label="Trámites"><option>Creación y registro de empresas</option><option>Solicitud y renovación de ITIN</option><option>Cierre y disolución de empresas</option></optgroup>
+          <optgroup label="Impuestos internacionales"><option>Declaración personal con ingresos internacionales</option><option>Declaración empresarial con socios extranjeros</option><option>Asesoría en requisitos de ley internacionales</option></optgroup>
+          <option>Otro / No estoy seguro</option>
+        </select>
+        <label for="f-servicio">¿En qué te podemos ayudar?</label><span class="field__err">Elige una opción</span>
+      </div>
+      <fieldset class="chips">
+        <legend>Prefiero que me contacten por</legend>
+        <label><input type="radio" name="canal" value="Llamada" checked /><span>Llamada</span></label>
+        <label><input type="radio" name="canal" value="WhatsApp" /><span>WhatsApp</span></label>
+        <label><input type="radio" name="canal" value="Correo" /><span>Correo</span></label>
+      </fieldset>
+      <div class="field"><textarea id="f-mensaje" name="mensaje" rows="3" placeholder=" "></textarea><label for="f-mensaje">Cuéntanos tu caso (opcional)</label></div>
+      <button class="btn btn--dark btn--block" type="submit"><span class="btn__text">Enviar solicitud</span><span class="btn__icon"><svg class="ic"><use href="#i-ne"/></svg></span></button>
+      <p class="form__note">Tu información es confidencial. Al enviar se abrirá tu correo con el mensaje listo.</p>
+      <p class="form__ok" role="status">¡Gracias! Si tu correo no se abrió, escríbenos a {{site.email}} o llámanos al {{site.phone}}.</p>
+    </form>
+  </div>
+</section>

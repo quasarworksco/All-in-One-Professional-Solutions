@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://allinone.dgp-link.com/sitemap.xml
