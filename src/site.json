@@ -1,6 +1,6 @@
 {
   "name": "All in One Professional Services",
-  "url": "https://allinone.dgp-link.com",
+  "url": "https://quasarworksco.github.io/All-in-One-Professional-Solutions",
   "phone": "(979) 900-6056",
   "phoneHref": "+19799006056",
   "whatsapp": "19799006056",
@@ -11,5 +11,6 @@
   "hoursShort": "Lun – Vie · 9am – 6pm",
   "facebook": "#",
   "instagram": "#",
-  "linkedin": "#"
+  "linkedin": "#",
+  "basePath": "/All-in-One-Professional-Solutions/"
 }

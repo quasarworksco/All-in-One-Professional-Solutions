@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://allinone.dgp-link.com/sitemap.xml
+Sitemap: https://quasarworksco.github.io/All-in-One-Professional-Solutions/sitemap.xml
