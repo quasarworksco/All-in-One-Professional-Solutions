@@ -5,7 +5,7 @@ impuestos, trámites e impuestos internacionales. La estructura sigue suarezcama
 referencia del cliente) y el diseño usa el mismo lenguaje editorial que JP Real Estate:
 
 - fotografía real a sangre;
-- tipografía grande con Inter Tight + Instrument Serif, alojadas en el sitio;
+- tipografía grande en Inter Tight (alojada en el sitio), con acentos dorados en peso fino en lugar de una serif;
 - líneas finas en lugar de tarjetas;
 - paleta de tinta verde casi negra, papel cálido y un oro discreto.
 
@@ -33,7 +33,7 @@ src/pages/*.html       Contenido de cada página
 src/partials/          head, header (menú y menú móvil), footer, banda final e íconos
 assets/css/styles.css  Sistema de diseño
 assets/js/main.js      Menús, animaciones (GSAP + ScrollTrigger + Lenis), cursor y formulario
-assets/fonts/          Inter Tight e Instrument Serif
+assets/fonts/          Inter Tight (variable 300–700)
 assets/img/photos/     Fotografías (WebP)
 assets/vendor/         GSAP 3.12.5, ScrollTrigger y Lenis
 ```
@@ -68,16 +68,15 @@ Con “reducir movimiento” activado, o si GSAP no carga, el sitio se muestra c
 ## Fotografías
 
 Son de [Unsplash](https://unsplash.com/license), con licencia gratuita para uso comercial.
-La del hero es el skyline de Dallas, como en el sitio de referencia. Se pueden reemplazar
+Las del hero y la banda final son del skyline de Houston (la oficina está en Richmond, TX). Se pueden reemplazar
 por fotos propias del cliente manteniendo el mismo nombre de archivo en `assets/img/photos/`.
 
 ## Pendiente del cliente
 
 - [ ] Logo oficial (hoy se usa un isotipo provisional en SVG)
-- [ ] Teléfono, WhatsApp, correo, dirección y redes → `src/site.json`
+- [ ] Dirección completa de la oficina en Richmond, TX, confirmar que el WhatsApp es el mismo teléfono y enlaces de redes → `src/site.json`
 - [ ] Nombres, cargos, fotos y biografías del equipo → `src/pages/quienes-somos.html`
 - [ ] Confirmar el notario asociado (Joshua) para Servicios de notaría
-- [ ] Confirmar la ciudad de la oficina (para elegir la foto del hero)
 - [ ] Revisar textos de misión, visión y valores
 - [ ] Versión en inglés
 - [ ] Conectar el formulario a un CRM o correo (hoy abre el correo del visitante con el mensaje listo)
