@@ -4,11 +4,14 @@
 <meta charset="UTF-8" />
 <script>
   // "js" habilita los estados iniciales de animación; "intro" muestra el preloader
-  // solo en la primera página vista de la sesión y si no se pidió reducir movimiento.
+  // solo la primera vez que alguien entra al sitio (queda guardado en localStorage).
   (function (d) {
     d.classList.add("js");
     try {
-      if (!matchMedia("(prefers-reduced-motion: reduce)").matches && !sessionStorage.getItem("aio-intro")) d.classList.add("intro");
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches && !localStorage.getItem("aio-intro")) {
+        d.classList.add("intro");
+        localStorage.setItem("aio-intro", "1");
+      }
     } catch (e) {}
   })(document.documentElement);
 </script>
