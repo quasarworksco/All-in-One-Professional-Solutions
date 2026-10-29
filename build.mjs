@@ -43,6 +43,8 @@ for (const file of pages) {
   // La 404 se sirve desde cualquier ruta: necesita <base> para que los enlaces relativos funcionen.
   page.extraHead = page.noindex ? '<meta name="robots" content="noindex" />\n<base href="/" />' : "";
   page.canonical = `${site.url}/${page.path}`;
+  // Precarga la foto del hero de cada página para que aparezca sin parpadeo.
+  page.preload = page.hero ? `<link rel="preload" as="image" href="assets/img/photos/${page.hero}" fetchpriority="high" />` : "";
   const body = raw.slice(m[0].length);
   const html = render(`<!-- @include head -->\n<!-- @include header -->\n<main id="contenido">\n${body}</main>\n<!-- @include footer -->\n`, page);
   writeFileSync(join(root, file), html);

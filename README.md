@@ -1,9 +1,13 @@
 # All in One Professional Services — Sitio web
 
 Sitio estático en español para **All in One Professional Services**: contabilidad, nómina,
-impuestos, trámites e impuestos internacionales. Estructura inspirada en
-suarezcamarena.com, con la paleta propia de la marca (verde bosque + oro, base marfil) y el
-mismo motor de animación que JP Real Estate (GSAP + ScrollTrigger + Lenis).
+impuestos, trámites e impuestos internacionales. La estructura sigue suarezcamarena.com (la
+referencia del cliente) y el diseño usa el mismo lenguaje editorial que JP Real Estate:
+
+- fotografía real a sangre;
+- tipografía grande con Inter Tight + Instrument Serif, alojadas en el sitio;
+- líneas finas en lugar de tarjetas;
+- paleta de tinta verde casi negra, papel cálido y un oro discreto.
 
 Dominio: `allinone.dgp-link.com` (GitHub Pages, ver `CNAME`).
 
@@ -11,26 +15,27 @@ Dominio: `allinone.dgp-link.com` (GitHub Pages, ver `CNAME`).
 
 | Página | Archivo | Contenido |
 | --- | --- | --- |
-| Inicio | `index.html` | Hero con tablero animado, marquesina, promesa, 8 servicios, 3 trámites, impuestos internacionales, quiénes somos, proceso, por qué elegirnos, FAQ y CTA |
-| Quiénes Somos | `quienes-somos.html` | Historia, grupo de trabajo con biografías, lo que nos caracteriza, misión, visión y valores |
+| Inicio | `index.html` | Hero con foto y palabras que rotan, promesa, 8 servicios en filas con vista previa, marquesina, trámites, por qué elegirnos, internacional, galería horizontal “A quién ayudamos”, quiénes somos, proceso, FAQ y banda final |
+| Quiénes Somos | `quienes-somos.html` | Historia, grupo de trabajo con biografías, misión, visión y valores |
 | Servicios | `servicios.html` | Contabilidad, Nómina, Sales Tax, Impuestos personales, Impuestos empresariales, Resolución de problemas, Estrategias fiscales y Notaría |
 | Trámites | `tramites.html` | Creación y registro de empresas, Solicitud y renovación de ITIN, Cierre y disolución de empresas |
-| Impuestos Internacionales | `impuestos-internacionales.html` | Declaraciones personales con ingresos internacionales, empresariales con socios extranjeros y asesoría en requisitos de ley |
-| Contacto | `contacto.html` | Datos de contacto, horario y formulario (preselecciona el servicio desde cualquier botón “Cotizar/Agendar”) |
+| Impuestos Internacionales | `impuestos-internacionales.html` | Personas con ingresos internacionales, empresas con socios extranjeros y asesoría en requisitos de ley |
+| Contacto | `contacto.html` | Datos de contacto y formulario (preselecciona el servicio desde cualquier botón “Cotizar/Agendar”) |
 | 404 | `404.html` | Página de error |
 
 ## Cómo se edita
 
-Los HTML de la raíz **se generan**: no se editan a mano.
+Los HTML de la raíz **se generan**, no se editan a mano.
 
 ```
-src/site.json        Teléfono, correo, dirección, horario y redes (se usan en todo el sitio)
-src/pages/*.html     Contenido de cada página
-src/partials/        head, header (menú), footer, cta e íconos — compartidos por todas las páginas
-assets/css/styles.css  Sistema de diseño y estilos
-assets/js/main.js      Menús, panel móvil, sub-navegación, biografías y formulario
-assets/js/motion.js    Animaciones (preloader, títulos, parallax, marquesina, magnéticos…)
-assets/vendor/         GSAP 3.12.5, ScrollTrigger y Lenis (locales, sin CDN)
+src/site.json          Teléfono, correo, dirección, horario y redes (se usan en todo el sitio)
+src/pages/*.html       Contenido de cada página
+src/partials/          head, header (menú y menú móvil), footer, banda final e íconos
+assets/css/styles.css  Sistema de diseño
+assets/js/main.js      Menús, animaciones (GSAP + ScrollTrigger + Lenis), cursor y formulario
+assets/fonts/          Inter Tight e Instrument Serif
+assets/img/photos/     Fotografías (WebP)
+assets/vendor/         GSAP 3.12.5, ScrollTrigger y Lenis
 ```
 
 Después de cambiar algo en `src/`:
@@ -47,16 +52,24 @@ python3 -m http.server 8080
 
 ## Animaciones
 
-- Preloader con el logo (solo en la primera página de la sesión)
+- Preloader con contador (solo en la primera página de la sesión)
+- Hero con zoom de la foto, títulos por líneas y palabras que rotan (“en regla / al día / en orden / sin estrés”)
+- Scroll suave con Lenis y parallax en heroes e imágenes
+- Navegación que se oculta al bajar y reaparece al subir
 - Títulos que se revelan palabra por palabra y texto que se ilumina con el scroll
-- Scroll suave (Lenis), parallax en los heroes y el globo internacional que gira
-- Tablero del hero con inclinación 3D según el mouse
-- Marquesina que acelera y se inclina con la velocidad del scroll
-- Contadores, cortina en la imagen de “Quiénes somos”, CTA que se expande
-- Botones magnéticos y foco de luz que sigue al cursor en las tarjetas
-- Wordmark gigante en el footer
+- Lista de servicios con relleno al pasar el mouse y vista previa de la foto que sigue al cursor
+- Marquesina que reacciona a la velocidad del scroll
+- Galería horizontal anclada (“A quién ayudamos”)
+- Imágenes con cortina, sello giratorio, contadores y banda final que se expande
+- Cursor con inversión de color, botones magnéticos y texto que rueda en botones y menú
 
 Con “reducir movimiento” activado, o si GSAP no carga, el sitio se muestra completo y estático.
+
+## Fotografías
+
+Son de [Unsplash](https://unsplash.com/license), con licencia gratuita para uso comercial.
+La del hero es el skyline de Dallas, como en el sitio de referencia. Se pueden reemplazar
+por fotos propias del cliente manteniendo el mismo nombre de archivo en `assets/img/photos/`.
 
 ## Pendiente del cliente
 
@@ -64,6 +77,7 @@ Con “reducir movimiento” activado, o si GSAP no carga, el sitio se muestra c
 - [ ] Teléfono, WhatsApp, correo, dirección y redes → `src/site.json`
 - [ ] Nombres, cargos, fotos y biografías del equipo → `src/pages/quienes-somos.html`
 - [ ] Confirmar el notario asociado (Joshua) para Servicios de notaría
+- [ ] Confirmar la ciudad de la oficina (para elegir la foto del hero)
 - [ ] Revisar textos de misión, visión y valores
-- [ ] Versión en inglés (el sitio ya indica atención ES · EN)
+- [ ] Versión en inglés
 - [ ] Conectar el formulario a un CRM o correo (hoy abre el correo del visitante con el mensaje listo)

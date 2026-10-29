@@ -15,7 +15,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>All in One Professional Services — Contabilidad, impuestos y trámites en un solo lugar</title>
 <meta name="description" content="Contabilidad, nómina, sales tax, impuestos personales y empresariales, ITIN, creación de empresas e impuestos internacionales. Un solo equipo para tus finanzas y tu negocio." />
-<meta name="theme-color" content="#0a2c22" />
+<meta name="theme-color" content="#0b1310" />
 <link rel="canonical" href="https://allinone.dgp-link.com/" />
 
 
@@ -34,9 +34,9 @@
 <meta name="twitter:image" content="https://allinone.dgp-link.com/assets/img/og-image.jpg" />
 
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="preload" href="assets/fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/instrument-serif-italic-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" as="image" href="assets/img/photos/hero-2000.webp" fetchpriority="high" />
 <link rel="stylesheet" href="assets/css/styles.css" />
 
 <script type="application/ld+json">
@@ -60,7 +60,7 @@
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <symbol id="i-logo" viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M15 31v-4M21 31v-9M27 31V18" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/><path d="M33 31V13" fill="none" stroke="var(--logo-accent,#d9ac52)" stroke-width="3.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M15 31v-4M21 31v-9M27 31V18" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/><path d="M33 31V13" fill="none" stroke="var(--logo-accent,#c9a45c)" stroke-width="3.6" stroke-linecap="round"/></symbol>
     <symbol id="i-ledger" viewBox="0 0 24 24"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/><path d="M9 7.5h6M9 11h6M9 14.5h3"/></symbol>
     <symbol id="i-payroll" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M17 6.5v9M19.5 8.2c-.4-.8-1.3-1.2-2.5-1.2-1.4 0-2.4.7-2.4 1.7 0 2.4 5 1.2 5 3.8 0 1-1.1 1.8-2.6 1.8-1.2 0-2.2-.5-2.6-1.3"/></symbol>
     <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-2.5-1.6L13 21l-2-1.6L8.5 21 6 19.4z"/><path d="M9 8h6M9 11.5h6M9 15h4"/></symbol>
@@ -79,6 +79,7 @@
     <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
     <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-ne" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
     <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
@@ -102,266 +103,276 @@
 
 
 <div class="preloader" aria-hidden="true">
-  <div class="preloader__in">
-    <svg class="preloader__mark" viewBox="0 0 48 48" fill="none" stroke-linecap="round"><circle cx="24" cy="24" r="19" stroke="currentColor" stroke-width="3.2"/><path d="M15 31v-4M21 31v-9M27 31V18" stroke="currentColor" stroke-width="3.6"/><path d="M33 31V13" stroke="#d9ac52" stroke-width="3.6"/></svg>
-    <div class="preloader__word"><span>All</span>&nbsp;<span>in</span>&nbsp;<span>One</span></div>
-    <div class="preloader__bar"><i></i></div>
+  <div class="preloader__top"><span>All in One Professional Services</span><span>Contabilidad · Impuestos · Trámites</span></div>
+  <div class="preloader__center">
+    <svg class="preloader__mark" viewBox="0 0 48 48" fill="none" stroke-linecap="round"><circle cx="24" cy="24" r="19" stroke="#fff" stroke-width="2.4"/><path d="M15 31v-4M21 31v-9M27 31V18" stroke="#fff" stroke-width="3"/><path d="M33 31V13" stroke="#c9a45c" stroke-width="3"/></svg>
   </div>
-  <span class="preloader__num">0</span>
+  <div class="preloader__bottom"><span>Cargando</span><span class="preloader__count"><span class="preloader__num">0</span><small>%</small></span></div>
+  <span class="preloader__line"></span>
 </div>
 
-<div class="topbar">
-  <div class="container topbar__in">
-    <p class="topbar__item"><svg class="ic"><use href="#i-pin"/></svg><span>Dirección de la oficina, Ciudad, TX 00000</span></p>
-    <div class="topbar__right">
-      <p class="topbar__item"><svg class="ic"><use href="#i-clock"/></svg><span>Lunes a Viernes · 9:00 am – 6:00 pm</span></p>
-      <a class="topbar__item topbar__phone" href="tel:+10000000000"><svg class="ic"><use href="#i-phone"/></svg><span>(XXX) XXX-XXXX</span></a>
-      <span class="topbar__lang" title="Atendemos en español e inglés">ES · EN</span>
-    </div>
-  </div>
+<div class="cursor is-hidden" aria-hidden="true">
+  <span class="cursor__blob"></span><span class="cursor__dot"></span>
+  <span class="cursor__label"><span>Ver</span></span>
 </div>
 
-<header class="header" id="header">
-  <div class="container header__in">
-    <a class="brand" href="./" aria-label="All in One Professional Services — Inicio">
-      <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
-      <span class="brand__text"><b>All in One</b><small>Professional Services</small></span>
-    </a>
+<header class="nav" id="nav">
+  <a class="brand" href="./" aria-label="All in One Professional Services — Inicio">
+    <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+    <span class="brand__name"><b>All in One</b><small>Professional Services</small></span>
+  </a>
 
-    <nav class="nav" id="nav" aria-label="Principal">
-      <div class="nav__head">
-        <span class="brand__text"><b>All in One</b><small>Professional Services</small></span>
-        <button class="icon-btn" type="button" data-nav-close aria-label="Cerrar menú"><svg class="ic"><use href="#i-close"/></svg></button>
+  <ul class="nav__links">
+    <li class="nav__item"><a class="nav__link" href="quienes-somos.html"><span class="roll"><span data-text="Quiénes Somos">Quiénes Somos</span></span></a></li>
+    <li class="nav__item has-menu">
+      <button class="nav__link" type="button" aria-expanded="false" aria-controls="m-servicios"><span class="roll"><span data-text="Servicios">Servicios</span></span><svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
+      <div class="menu menu--wide" id="m-servicios">
+        <div class="menu__grid">
+          <a class="menu__link" href="servicios.html#contabilidad"><small>01</small><b>Contabilidad</b><span>Bookkeeping y estados financieros</span></a>
+          <a class="menu__link" href="servicios.html#nomina"><small>02</small><b>Nómina</b><span>Payroll y reportes trimestrales</span></a>
+          <a class="menu__link" href="servicios.html#sales-tax"><small>03</small><b>Sales Tax</b><span>Permisos, cálculo y presentación</span></a>
+          <a class="menu__link" href="servicios.html#impuestos-personales"><small>04</small><b>Impuestos personales</b><span>Declaraciones individuales y familiares</span></a>
+          <a class="menu__link" href="servicios.html#impuestos-empresariales"><small>05</small><b>Impuestos empresariales</b><span>LLC, S-Corp, C-Corp y sociedades</span></a>
+          <a class="menu__link" href="servicios.html#resolucion"><small>06</small><b>Resolución de problemas</b><span>Cartas del IRS, auditorías y deudas</span></a>
+          <a class="menu__link" href="servicios.html#estrategias"><small>07</small><b>Estrategias fiscales</b><span>Planificación para pagar lo justo</span></a>
+          <a class="menu__link" href="servicios.html#notaria"><small>08</small><b>Servicios de notaría</b><span>Con notario público asociado</span></a>
+        </div>
+        <a class="menu__all" href="servicios.html">Ver todos los servicios <svg class="ic"><use href="#i-arrow"/></svg></a>
       </div>
-
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="quienes-somos.html">Quiénes Somos</a></li>
-
-        <li class="nav__item has-menu">
-          <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-servicios">Servicios <svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
-          <div class="menu menu--mega" id="menu-servicios">
-            <div class="menu__grid">
-              <a class="menu__link" href="servicios.html#contabilidad"><span class="menu__ic"><svg class="ic"><use href="#i-ledger"/></svg></span><span><b>Contabilidad</b><small>Bookkeeping mensual y estados financieros</small></span></a>
-              <a class="menu__link" href="servicios.html#nomina"><span class="menu__ic"><svg class="ic"><use href="#i-payroll"/></svg></span><span><b>Nómina</b><small>Payroll, depósitos y reportes trimestrales</small></span></a>
-              <a class="menu__link" href="servicios.html#sales-tax"><span class="menu__ic"><svg class="ic"><use href="#i-receipt"/></svg></span><span><b>Sales Tax</b><small>Permisos, cálculo y presentación</small></span></a>
-              <a class="menu__link" href="servicios.html#impuestos-personales"><span class="menu__ic"><svg class="ic"><use href="#i-user"/></svg></span><span><b>Impuestos personales</b><small>Declaraciones individuales y familiares</small></span></a>
-              <a class="menu__link" href="servicios.html#impuestos-empresariales"><span class="menu__ic"><svg class="ic"><use href="#i-building"/></svg></span><span><b>Impuestos empresariales</b><small>LLC, S-Corp, C-Corp y sociedades</small></span></a>
-              <a class="menu__link" href="servicios.html#resolucion"><span class="menu__ic"><svg class="ic"><use href="#i-shield"/></svg></span><span><b>Resolución de problemas</b><small>Cartas del IRS, auditorías y deudas</small></span></a>
-              <a class="menu__link" href="servicios.html#estrategias"><span class="menu__ic"><svg class="ic"><use href="#i-target"/></svg></span><span><b>Estrategias fiscales</b><small>Planificación para pagar lo justo</small></span></a>
-              <a class="menu__link" href="servicios.html#notaria"><span class="menu__ic"><svg class="ic"><use href="#i-stamp"/></svg></span><span><b>Servicios de notaría</b><small>Con notario público asociado</small></span></a>
-            </div>
-            <a class="menu__all" href="servicios.html">Ver todos los servicios <svg class="ic"><use href="#i-arrow"/></svg></a>
-          </div>
-        </li>
-
-        <li class="nav__item has-menu">
-          <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-tramites">Trámites <svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
-          <div class="menu" id="menu-tramites">
-            <a class="menu__link" href="tramites.html#creacion-empresas"><span class="menu__ic"><svg class="ic"><use href="#i-briefcase"/></svg></span><span><b>Creación y registro de empresas</b><small>LLC y corporaciones, EIN incluido</small></span></a>
-            <a class="menu__link" href="tramites.html#itin"><span class="menu__ic"><svg class="ic"><use href="#i-idcard"/></svg></span><span><b>Solicitud y renovación de ITIN</b><small>Formulario W-7 de principio a fin</small></span></a>
-            <a class="menu__link" href="tramites.html#cierre-empresas"><span class="menu__ic"><svg class="ic"><use href="#i-archive"/></svg></span><span><b>Cierre y disolución de empresas</b><small>Cierre ordenado ante el estado y el IRS</small></span></a>
-            <a class="menu__all" href="tramites.html">Ver todos los trámites <svg class="ic"><use href="#i-arrow"/></svg></a>
-          </div>
-        </li>
-
-        <li class="nav__item has-menu">
-          <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-internacional">Impuestos Internacionales <svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
-          <div class="menu" id="menu-internacional">
-            <a class="menu__link" href="impuestos-internacionales.html#personales"><span class="menu__ic"><svg class="ic"><use href="#i-globe"/></svg></span><span><b>Declaraciones personales con ingresos internacionales</b><small>Cuentas, rentas y salarios del exterior</small></span></a>
-            <a class="menu__link" href="impuestos-internacionales.html#socios-extranjeros"><span class="menu__ic"><svg class="ic"><use href="#i-handshake"/></svg></span><span><b>Declaraciones empresariales con socios extranjeros</b><small>Sociedades y LLC con dueños fuera de EE. UU.</small></span></a>
-            <a class="menu__link" href="impuestos-internacionales.html#asesoria"><span class="menu__ic"><svg class="ic"><use href="#i-scale"/></svg></span><span><b>Asesoría en requisitos de ley</b><small>Para ingresos internacionales y contribuyentes extranjeros</small></span></a>
-            <a class="menu__all" href="impuestos-internacionales.html">Ver impuestos internacionales <svg class="ic"><use href="#i-arrow"/></svg></a>
-          </div>
-        </li>
-
-        <li class="nav__item"><a class="nav__link" href="contacto.html">Contacto</a></li>
-      </ul>
-
-      <div class="nav__foot">
-        <a class="btn btn--gold btn--block" href="contacto.html#agenda">Agenda tu consulta <svg class="ic"><use href="#i-arrow"/></svg></a>
-        <a class="nav__contact" href="tel:+10000000000"><svg class="ic"><use href="#i-phone"/></svg>(XXX) XXX-XXXX</a>
+    </li>
+    <li class="nav__item has-menu">
+      <button class="nav__link" type="button" aria-expanded="false" aria-controls="m-tramites"><span class="roll"><span data-text="Trámites">Trámites</span></span><svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
+      <div class="menu" id="m-tramites">
+        <a class="menu__link" href="tramites.html#creacion-empresas"><small>01</small><b>Creación y registro de empresas</b><span>LLC y corporaciones, con EIN</span></a>
+        <a class="menu__link" href="tramites.html#itin"><small>02</small><b>Solicitud y renovación de ITIN</b><span>Formulario W-7 de principio a fin</span></a>
+        <a class="menu__link" href="tramites.html#cierre-empresas"><small>03</small><b>Cierre y disolución de empresas</b><span>Cierre ordenado ante el estado y el IRS</span></a>
+        <a class="menu__all" href="tramites.html">Ver todos los trámites <svg class="ic"><use href="#i-arrow"/></svg></a>
       </div>
-    </nav>
+    </li>
+    <li class="nav__item has-menu">
+      <button class="nav__link" type="button" aria-expanded="false" aria-controls="m-internacional"><span class="roll"><span data-text="Impuestos Internacionales">Impuestos Internacionales</span></span><svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
+      <div class="menu" id="m-internacional">
+        <a class="menu__link" href="impuestos-internacionales.html#personales"><small>01</small><b>Declaraciones personales con ingresos internacionales</b><span>Cuentas, rentas y salarios del exterior</span></a>
+        <a class="menu__link" href="impuestos-internacionales.html#socios-extranjeros"><small>02</small><b>Declaraciones empresariales con socios extranjeros</b><span>Empresas con dueños fuera de EE. UU.</span></a>
+        <a class="menu__link" href="impuestos-internacionales.html#asesoria"><small>03</small><b>Asesoría en requisitos de ley</b><span>Para ingresos internacionales y contribuyentes extranjeros</span></a>
+        <a class="menu__all" href="impuestos-internacionales.html">Ver impuestos internacionales <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </li>
+    <li class="nav__item"><a class="nav__link" href="contacto.html"><span class="roll"><span data-text="Contacto">Contacto</span></span></a></li>
+  </ul>
 
-    <div class="header__actions">
-      <a class="btn btn--primary header__cta" href="contacto.html#agenda">Agenda tu consulta <svg class="ic"><use href="#i-arrow"/></svg></a>
-      <button class="icon-btn header__burger" type="button" data-nav-open aria-controls="nav" aria-expanded="false" aria-label="Abrir menú"><svg class="ic"><use href="#i-menu"/></svg></button>
-    </div>
-  </div>
+  <a class="nav__cta" href="contacto.html#agenda">Agenda tu consulta</a>
+  <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mmenu"><span></span><span></span></button>
 </header>
-<div class="scrim" data-nav-close hidden></div>
+
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <nav class="mmenu__list" aria-label="Menú móvil">
+    <div class="mmenu__row"><a href="quienes-somos.html"><small>01</small>Quiénes Somos</a></div>
+    <div class="mmenu__row">
+      <button type="button" aria-expanded="false"><small>02</small>Servicios<svg class="ic"><use href="#i-plus"/></svg></button>
+      <div class="mmenu__sub"><div>
+        <a href="servicios.html#contabilidad">Contabilidad</a><a href="servicios.html#nomina">Nómina</a><a href="servicios.html#sales-tax">Sales Tax</a><a href="servicios.html#impuestos-personales">Impuestos personales</a><a href="servicios.html#impuestos-empresariales">Impuestos empresariales</a><a href="servicios.html#resolucion">Resolución de problemas</a><a href="servicios.html#estrategias">Estrategias fiscales</a><a href="servicios.html#notaria">Servicios de notaría</a>
+      </div></div>
+    </div>
+    <div class="mmenu__row">
+      <button type="button" aria-expanded="false"><small>03</small>Trámites<svg class="ic"><use href="#i-plus"/></svg></button>
+      <div class="mmenu__sub"><div>
+        <a href="tramites.html#creacion-empresas">Creación y registro de empresas</a><a href="tramites.html#itin">Solicitud y renovación de ITIN</a><a href="tramites.html#cierre-empresas">Cierre y disolución de empresas</a>
+      </div></div>
+    </div>
+    <div class="mmenu__row">
+      <button type="button" aria-expanded="false"><small>04</small>Internacional<svg class="ic"><use href="#i-plus"/></svg></button>
+      <div class="mmenu__sub"><div>
+        <a href="impuestos-internacionales.html#personales">Personas con ingresos internacionales</a><a href="impuestos-internacionales.html#socios-extranjeros">Empresas con socios extranjeros</a><a href="impuestos-internacionales.html#asesoria">Asesoría en requisitos de ley</a>
+      </div></div>
+    </div>
+    <div class="mmenu__row"><a href="contacto.html"><small>05</small>Contacto</a></div>
+  </nav>
+  <div class="mmenu__foot">
+    <a href="tel:+10000000000">(XXX) XXX-XXXX</a>
+    <a href="mailto:correo@empresa.com">correo@empresa.com</a>
+    <span>Lun – Vie · 9am – 6pm</span>
+  </div>
+</div>
 
 <main id="contenido">
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="hero__grid-bg" aria-hidden="true"></div>
-  <svg class="hero__skyline" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 160V118h40V96h28v22h22V70h36v48h20V88h30v30h26V40h18V22h14v18h18v78h22V82h34v36h30V58h40v60h18V96h26v22h34V30h22v-14h20v14h22v88h28V76h36v42h22V92h30v26h34V50h44v68h20V84h28v34h40V64h24V44h30v74h26V90h32v28h22V58h38v60h30V98h22v20h36V36h18V18h16v18h18v82h30V80h40v38h24V100h28v18h30V62h36v56h40V92h26v26h22V74h30v44h34V104h26v14h30V60h40v58h34V160z"/></svg>
+  <div class="hero__media">
+    <img src="assets/img/photos/hero-2000.webp" srcset="assets/img/photos/hero-1200.webp 1200w, assets/img/photos/hero-2000.webp 2000w" sizes="100vw" alt="Skyline de Dallas al atardecer reflejado en el agua" fetchpriority="high" decoding="async" />
+  </div>
+  <div class="hero__shade"></div>
 
-  <div class="container hero__in">
-    <div>
-      <p class="eyebrow eyebrow--light">Contabilidad · Impuestos · Trámites</p>
-      <h1>Tus finanzas y tu negocio, <em>todo en un solo lugar.</em></h1>
-      <p class="hero__lead">Llevamos tu contabilidad, tu nómina y tus impuestos —en Estados Unidos y con ingresos internacionales— para que tú te concentres en crecer. Un solo equipo, un solo punto de contacto, cero sorpresas con el IRS.</p>
-      <div class="hero__actions">
-        <a class="btn btn--gold btn--lg" href="contacto.html#agenda">Agenda tu consulta <svg class="ic"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--ghost-light btn--lg" href="servicios.html">Ver servicios</a>
-      </div>
-      <ul class="hero__chips">
-        <li><svg class="ic"><use href="#i-check"/></svg>Atención en español e inglés</li>
-        <li><svg class="ic"><use href="#i-check"/></svg>Personas y empresas</li>
-        <li><svg class="ic"><use href="#i-check"/></svg>Ingresos internacionales</li>
-      </ul>
-    </div>
+  <div class="hero__content">
+    <p class="hero__kicker" data-hero><span class="dot"></span>Contabilidad · Impuestos · Trámites</p>
+    <h1 class="hero__title" aria-label="Tus finanzas y tu negocio, en regla.">
+      <span class="line" aria-hidden="true"><span class="line__in">Tus finanzas</span></span>
+      <span class="line" aria-hidden="true"><span class="line__in">y tu negocio,</span></span>
+      <span class="line" aria-hidden="true"><span class="line__in"><span class="rotator"><span class="rotator__item is-active">en regla.</span><span class="rotator__item">al día.</span><span class="rotator__item">en orden.</span><span class="rotator__item">sin estrés.</span></span></span></span>
+    </h1>
+  </div>
 
-    <div class="board" aria-hidden="true">
-      <div class="board__card">
-        <div class="board__top">
-          <span class="board__title">Tu resumen del año</span>
-          <span class="board__pill"><i></i>Al día</span>
-        </div>
-        <p class="board__amount">Todo en orden<small>Contabilidad, nómina e impuestos en un mismo lugar</small></p>
-        <div class="board__chart">
-          <span style="height:38%;animation-delay:.1s"></span><span style="height:52%;animation-delay:.18s"></span><span style="height:46%;animation-delay:.26s"></span><span style="height:64%;animation-delay:.34s"></span><span style="height:58%;animation-delay:.42s"></span><span style="height:76%;animation-delay:.5s"></span><span style="height:70%;animation-delay:.58s"></span><span style="height:92%;animation-delay:.66s"></span>
-        </div>
-        <ul class="board__list">
-          <li><span class="board__check"><svg class="ic"><use href="#i-check"/></svg></span>Libros conciliados<small>Mensual</small></li>
-          <li><span class="board__check"><svg class="ic"><use href="#i-check"/></svg></span>Nómina procesada<small>Quincenal</small></li>
-          <li><span class="board__check"><svg class="ic"><use href="#i-check"/></svg></span>Sales tax presentado<small>Trimestral</small></li>
-          <li><span class="board__check"><svg class="ic"><use href="#i-check"/></svg></span>Declaración lista<small>Anual</small></li>
-        </ul>
-      </div>
-      <div class="board__float board__float--a">
-        <span class="menu__ic"><svg class="ic"><use href="#i-idcard"/></svg></span>
-        <span><b>ITIN</b><small>Solicitud enviada</small></span>
-      </div>
-      <div class="board__float board__float--b">
-        <span class="menu__ic"><svg class="ic"><use href="#i-globe"/></svg></span>
-        <span><b>Internacional</b><small>Ingresos del exterior</small></span>
-      </div>
+  <div class="hero__foot">
+    <p class="hero__lead" data-hero>Contabilidad, nómina, impuestos y trámites —en Estados Unidos y con ingresos internacionales— con un solo equipo que te conoce y te habla claro.</p>
+    <div class="hero__actions" data-hero>
+      <a class="btn btn--light magnetic" href="contacto.html#agenda"><span class="btn__text">Agenda tu consulta</span><span class="btn__icon"><svg class="ic"><use href="#i-ne"/></svg></span></a>
+      <a class="btn btn--outline magnetic" href="servicios.html"><span class="btn__text">Ver servicios</span></a>
     </div>
+    <div class="hero__meta" data-hero><span>ES · EN</span><span>Personas</span><span>Empresas</span></div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true"><span>Desliza</span><i></i></div>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section class="section">
+  <div class="container intro__grid">
+    <p class="label"><b>(01)</b> Nuestra promesa</p>
+    <p class="intro__text" data-words>No somos solo preparadores de impuestos. Somos el equipo que ordena tus números, cuida tus fechas y te explica cada decisión, para que tú te dediques a lo que <em>de verdad importa.</em></p>
   </div>
 </section>
 
-<!-- ============ FRANJA DE CONFIANZA ============ -->
-<div class="trust">
+<!-- ============ SERVICIOS ============ -->
+<section class="section" style="padding-top:0" id="servicios">
   <div class="container">
-    <div class="trust__in reveal">
-      <div class="trust__item"><span class="menu__ic"><svg class="ic"><use href="#i-handshake"/></svg></span><span><b>Un solo equipo</b><small>Todo tu caso en las mismas manos</small></span></div>
-      <div class="trust__item"><span class="menu__ic"><svg class="ic"><use href="#i-chat"/></svg></span><span><b>Bilingüe</b><small>Te explicamos todo en tu idioma</small></span></div>
-      <div class="trust__item"><span class="menu__ic"><svg class="ic"><use href="#i-lock"/></svg></span><span><b>Confidencial</b><small>Tus documentos, protegidos</small></span></div>
-      <div class="trust__item"><span class="menu__ic"><svg class="ic"><use href="#i-globe"/></svg></span><span><b>Alcance global</b><small>Ingresos y socios en el exterior</small></span></div>
+    <div class="head-split">
+      <div>
+        <p class="label"><b>(02)</b> Servicios</p>
+        <h2 class="h2" data-split>Lo hacemos <em>por ti.</em></h2>
+      </div>
+      <p class="lead" data-reveal>Ocho servicios que se conectan entre sí: tu contabilidad alimenta tu nómina, tu nómina alimenta tus impuestos y la estrategia cuida todo lo demás.</p>
     </div>
+
+    <ul class="srows">
+      <li class="srow" data-index="0"><a href="servicios.html#contabilidad" data-cursor="Ver"><span class="srow__num">01</span><span class="srow__title">Contabilidad</span><span class="srow__desc">Bookkeeping mensual, conciliaciones y estados financieros para decidir con números reales.</span><span class="srow__arrow"><svg class="ic"><use href="#i-ne"/></svg></span><img class="srow__img" src="assets/img/photos/contabilidad.webp" alt="" loading="lazy" /></a></li>
+      <li class="srow" data-index="1"><a href="servicios.html#nomina" data-cursor="Ver"><span class="srow__num">02</span><span class="srow__title">Nómina</span><span class="srow__desc">Payroll puntual, retenciones correctas y reportes trimestrales y anuales al día.</span><span class="srow__arrow"><svg class="ic"><use href="#i-ne"/></svg></span><img class="srow__img" src="assets/img/photos/nomina.webp" alt="" loading="lazy" /></a></li>
+      <li class="srow" data-index="2"><a href="servicios.html#sales-tax" data-cursor="Ver"><span class="srow__num">03</span><span class="srow__title">Sales Tax</span><span class="srow__desc">Permiso de ventas, cálculo y presentación del impuesto sobre ventas sin multas.</span><span class="srow__arrow"><svg class="ic"><use href="#i-ne"/></svg></span><img class="srow__img" src="assets/img/photos/sales-tax.webp" alt="" loading="lazy" /></a></li>
+      <li class="srow" data-index="3"><a href="servicios.html#impuestos-personales" data-cursor="Ver"><span class="srow__num">04</span><span class="srow__title">Personales</span><span class="srow__desc">Tu declaración individual o familiar, con todos los créditos a los que tienes derecho.</span><span class="srow__arrow"><svg class="ic"><use href="#i-ne"/></svg></span><img class="srow__img" src="assets/img/photos/personales.webp" alt="" loading="lazy" /></a></li>
+      <li class="srow" data-index="4"><a href="servicios.html#impuestos-empresariales" data-cursor="Ver"><span class="srow__num">05</span><span class="srow__title">Empresariales</span><span class="srow__desc">Declaraciones de LLC, S-Corp, C-Corp y sociedades, federales y estatales.</span><span class="srow__arrow"><svg class="ic"><use href="#i-ne"/></svg></span><img class="srow__img" src="assets/img/photos/empresariales.webp" alt="" loading="lazy" /></a></li>
+      <li class="srow" data-index="5"><a href="servicios.html#resolucion" data-cursor="Ver"><span class="srow__num">06</span><span class="srow__title">Resolución</span><span class="srow__desc">Cartas del IRS, auditorías, multas y deudas de impuestos: buscamos la mejor salida.</span><span class="srow__arrow"><svg class="ic"><use href="#i-ne"/></svg></span><img class="srow__img" src="assets/img/photos/resolucion.webp" alt="" loading="lazy" /></a></li>
+      <li class="srow" data-index="6"><a href="servicios.html#estrategias" data-cursor="Ver"><span class="srow__num">07</span><span class="srow__title">Estrategia</span><span class="srow__desc">Planificación fiscal durante todo el año para pagar lo justo, legalmente.</span><span class="srow__arrow"><svg class="ic"><use href="#i-ne"/></svg></span><img class="srow__img" src="assets/img/photos/estrategias.webp" alt="" loading="lazy" /></a></li>
+      <li class="srow" data-index="7"><a href="servicios.html#notaria" data-cursor="Ver"><span class="srow__num">08</span><span class="srow__title">Notaría</span><span class="srow__desc">Firmas, poderes y documentos notariados con nuestro notario público asociado.</span><span class="srow__arrow"><svg class="ic"><use href="#i-ne"/></svg></span><img class="srow__img" src="assets/img/photos/notaria.webp" alt="" loading="lazy" /></a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="preview" aria-hidden="true">
+  <div class="preview__inner">
+    <img data-src="assets/img/photos/contabilidad.webp" alt="" style="height:100%" />
+    <img data-src="assets/img/photos/nomina.webp" alt="" style="height:100%" />
+    <img data-src="assets/img/photos/sales-tax.webp" alt="" style="height:100%" />
+    <img data-src="assets/img/photos/personales.webp" alt="" style="height:100%" />
+    <img data-src="assets/img/photos/empresariales.webp" alt="" style="height:100%" />
+    <img data-src="assets/img/photos/resolucion.webp" alt="" style="height:100%" />
+    <img data-src="assets/img/photos/estrategias.webp" alt="" style="height:100%" />
+    <img data-src="assets/img/photos/notaria.webp" alt="" style="height:100%" />
   </div>
 </div>
 
 <!-- ============ MARQUESINA ============ -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee__track">
-    <div class="marquee__group"><span>Contabilidad</span><svg class="ic"><use href="#i-spark"/></svg><em>Nómina</em><svg class="ic"><use href="#i-spark"/></svg><span class="outline">Sales Tax</span><svg class="ic"><use href="#i-spark"/></svg><span>Impuestos</span><svg class="ic"><use href="#i-spark"/></svg><em>ITIN</em><svg class="ic"><use href="#i-spark"/></svg><span class="outline">Empresas</span><svg class="ic"><use href="#i-spark"/></svg><span>Internacional</span><svg class="ic"><use href="#i-spark"/></svg></div>
-    <div class="marquee__group"><span>Contabilidad</span><svg class="ic"><use href="#i-spark"/></svg><em>Nómina</em><svg class="ic"><use href="#i-spark"/></svg><span class="outline">Sales Tax</span><svg class="ic"><use href="#i-spark"/></svg><span>Impuestos</span><svg class="ic"><use href="#i-spark"/></svg><em>ITIN</em><svg class="ic"><use href="#i-spark"/></svg><span class="outline">Empresas</span><svg class="ic"><use href="#i-spark"/></svg><span>Internacional</span><svg class="ic"><use href="#i-spark"/></svg></div>
+    <div class="marquee__group"><span>Contabilidad</span><i></i><span><em>Nómina</em></span><i></i><span>Impuestos</span><i></i><span><em>ITIN</em></span><i></i><span>Empresas</span><i></i><span><em>Internacional</em></span><i></i></div>
+    <div class="marquee__group"><span>Contabilidad</span><i></i><span><em>Nómina</em></span><i></i><span>Impuestos</span><i></i><span><em>ITIN</em></span><i></i><span>Empresas</span><i></i><span><em>Internacional</em></span><i></i></div>
   </div>
 </div>
 
-<!-- ============ DECLARACIÓN ============ -->
-<section class="statement">
-  <div class="container">
-    <p class="eyebrow">Nuestra promesa</p>
-    <p data-words>No somos solo preparadores de impuestos. Somos el equipo que ordena tus números, cuida tus fechas y te explica cada decisión, para que tú te dediques a lo que <em>de verdad importa.</em></p>
-  </div>
-</section>
-
-<!-- ============ SERVICIOS ============ -->
-<section class="section" id="servicios">
-  <div class="container">
-    <div class="section-head section-head--split">
-      <div>
-        <p class="eyebrow">Nuestros servicios</p>
-        <h2 class="h-section">Contabilidad e impuestos, <em>¡lo hacemos por ti!</em></h2>
-      </div>
-      <p class="lead">Desde el registro de tu primera venta hasta tu declaración anual: cubrimos cada parte de la vida financiera de tu familia y de tu empresa, con procesos claros y fechas que nunca se pasan.</p>
-    </div>
-
-    <div class="grid grid--4 stagger">
-      <a class="card reveal" href="servicios.html#contabilidad"><span class="card__ic"><svg class="ic"><use href="#i-ledger"/></svg></span><h3>Contabilidad</h3><p>Bookkeeping mensual, conciliaciones y estados financieros para decidir con números reales.</p><span class="link-arrow">Ver más <svg class="ic"><use href="#i-arrow"/></svg></span></a>
-      <a class="card reveal" href="servicios.html#nomina"><span class="card__ic"><svg class="ic"><use href="#i-payroll"/></svg></span><h3>Nómina</h3><p>Payroll puntual, retenciones correctas y reportes trimestrales y anuales al día.</p><span class="link-arrow">Ver más <svg class="ic"><use href="#i-arrow"/></svg></span></a>
-      <a class="card reveal" href="servicios.html#sales-tax"><span class="card__ic"><svg class="ic"><use href="#i-receipt"/></svg></span><h3>Sales Tax</h3><p>Permiso de ventas, cálculo y presentación del impuesto sobre ventas sin multas.</p><span class="link-arrow">Ver más <svg class="ic"><use href="#i-arrow"/></svg></span></a>
-      <a class="card reveal" href="servicios.html#impuestos-personales"><span class="card__ic"><svg class="ic"><use href="#i-user"/></svg></span><h3>Impuestos personales</h3><p>Tu declaración individual o familiar, con todos los créditos y deducciones a los que tienes derecho.</p><span class="link-arrow">Ver más <svg class="ic"><use href="#i-arrow"/></svg></span></a>
-      <a class="card reveal" href="servicios.html#impuestos-empresariales"><span class="card__ic"><svg class="ic"><use href="#i-building"/></svg></span><h3>Impuestos empresariales</h3><p>Declaraciones de LLC, S-Corp, C-Corp y sociedades, federales y estatales.</p><span class="link-arrow">Ver más <svg class="ic"><use href="#i-arrow"/></svg></span></a>
-      <a class="card reveal" href="servicios.html#resolucion"><span class="card__ic"><svg class="ic"><use href="#i-shield"/></svg></span><h3>Resolución de problemas</h3><p>Cartas del IRS, auditorías, multas y deudas de impuestos. Te ayudamos a encontrar la mejor salida.</p><span class="link-arrow">Ver más <svg class="ic"><use href="#i-arrow"/></svg></span></a>
-      <a class="card reveal" href="servicios.html#estrategias"><span class="card__ic"><svg class="ic"><use href="#i-target"/></svg></span><h3>Estrategias fiscales</h3><p>Planificación durante todo el año para pagar lo justo, legalmente y sin sorpresas.</p><span class="link-arrow">Ver más <svg class="ic"><use href="#i-arrow"/></svg></span></a>
-      <a class="card reveal" href="servicios.html#notaria"><span class="card__ic"><svg class="ic"><use href="#i-stamp"/></svg></span><h3>Servicios de notaría</h3><p>Firmas, poderes y documentos notariados con nuestro notario público asociado.</p><span class="link-arrow">Ver más <svg class="ic"><use href="#i-arrow"/></svg></span></a>
-    </div>
-  </div>
-</section>
-
 <!-- ============ TRÁMITES ============ -->
-<section class="section section--white" id="tramites">
+<section class="section" id="tramites">
   <div class="container">
-    <div class="section-head section-head--center">
-      <p class="eyebrow">Trámites</p>
-      <h2 class="h-section">Abre, formaliza o cierra <em>sin perder tiempo</em></h2>
-      <p class="lead">Nos encargamos del papeleo ante el estado y el IRS de principio a fin. Tú firmas; nosotros damos seguimiento hasta que todo queda aprobado.</p>
+    <div class="head-split">
+      <div>
+        <p class="label"><b>(03)</b> Trámites</p>
+        <h2 class="h2" data-split>Abre, formaliza <em>o cierra.</em></h2>
+      </div>
+      <p class="lead" data-reveal>Nos encargamos del papeleo ante el estado y el IRS de principio a fin. Tú firmas; nosotros damos seguimiento hasta que queda aprobado.</p>
     </div>
-
-    <div class="grid grid--3 stagger">
-      <a class="card card--feature reveal" href="tramites.html#creacion-empresas">
-        <span class="card__num">01</span>
-        <span class="card__ic"><svg class="ic"><use href="#i-briefcase"/></svg></span>
-        <h3>Creación y registro de empresas</h3>
-        <p>Elegimos contigo la estructura adecuada (LLC o corporación), registramos la empresa en el estado y tramitamos su EIN para que empieces a operar con todo en regla.</p>
-        <span class="link-arrow">Conoce el proceso <svg class="ic"><use href="#i-arrow"/></svg></span>
+    <div class="tcards">
+      <a class="tcard" href="tramites.html#creacion-empresas" data-reveal data-cursor="Ver">
+        <div class="tcard__img"><img src="assets/img/photos/empresas.webp" alt="Dueño de un negocio en su local" loading="lazy" /><span class="tcard__tag">01</span></div>
+        <div class="tcard__cap"><b>Creación y registro de empresas</b><svg class="ic"><use href="#i-ne"/></svg></div>
+        <p>LLC o corporación, registro en el estado y EIN para que empieces a operar en regla.</p>
       </a>
-      <a class="card card--feature reveal" href="tramites.html#itin">
-        <span class="card__num">02</span>
-        <span class="card__ic"><svg class="ic"><use href="#i-idcard"/></svg></span>
-        <h3>Solicitud y renovación de ITIN</h3>
-        <p>Preparamos tu formulario W-7, revisamos tus documentos y lo presentamos junto con tu declaración. También renovamos ITIN vencidos.</p>
-        <span class="link-arrow">Conoce el proceso <svg class="ic"><use href="#i-arrow"/></svg></span>
+      <a class="tcard" href="tramites.html#itin" data-reveal data-cursor="Ver">
+        <div class="tcard__img"><img src="assets/img/photos/itin.webp" alt="Pasaporte sobre documentos" loading="lazy" /><span class="tcard__tag">02</span></div>
+        <div class="tcard__cap"><b>Solicitud y renovación de ITIN</b><svg class="ic"><use href="#i-ne"/></svg></div>
+        <p>Preparamos tu W-7, revisamos tus documentos y lo presentamos con tu declaración.</p>
       </a>
-      <a class="card card--feature reveal" href="tramites.html#cierre-empresas">
-        <span class="card__num">03</span>
-        <span class="card__ic"><svg class="ic"><use href="#i-archive"/></svg></span>
-        <h3>Cierre y disolución de empresas</h3>
-        <p>Cerramos tu empresa de forma ordenada: disolución en el estado, declaraciones finales y cierre de cuentas de impuestos para que nada quede pendiente.</p>
-        <span class="link-arrow">Conoce el proceso <svg class="ic"><use href="#i-arrow"/></svg></span>
+      <a class="tcard" href="tramites.html#cierre-empresas" data-reveal data-cursor="Ver">
+        <div class="tcard__img"><img src="assets/img/photos/cierre.webp" alt="Revisión de documentos sobre un escritorio" loading="lazy" /><span class="tcard__tag">03</span></div>
+        <div class="tcard__cap"><b>Cierre y disolución de empresas</b><svg class="ic"><use href="#i-ne"/></svg></div>
+        <p>Disolución en el estado, declaraciones finales y cierre de cuentas, sin cabos sueltos.</p>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ============ IMPUESTOS INTERNACIONALES ============ -->
-<section class="section section--dark on-dark" id="internacional">
+<!-- ============ POR QUÉ ============ -->
+<section class="section dark">
+  <div class="container">
+    <div class="why__grid">
+      <div class="why__head">
+        <p class="label"><b>(04)</b> Por qué elegirnos</p>
+        <h2 class="h2" data-split>Tu mejor <em>solución.</em></h2>
+        <p class="lead">No preparamos solo una declaración: construimos contigo una base financiera ordenada para que tomes mejores decisiones.</p>
+      </div>
+      <div class="why__list">
+        <div class="why__item" data-reveal><span class="why__num">01</span><div><h3>Un solo equipo</h3><p>Libros, nómina, impuestos y trámites en las mismas manos. Nadie tiene que volver a contarte lo que ya sabe.</p></div></div>
+        <div class="why__item" data-reveal><span class="why__num">02</span><div><h3>Cumplimiento legal</h3><p>Cada declaración y cada trámite se hacen conforme a la ley federal y estatal. Nada de atajos riesgosos.</p></div></div>
+        <div class="why__item" data-reveal><span class="why__num">03</span><div><h3>Claridad, en tu idioma</h3><p>Te explicamos cada número y cada paso en español o en inglés, sin tecnicismos.</p></div></div>
+        <div class="why__item" data-reveal><span class="why__num">04</span><div><h3>Soporte al 100%</h3><p>Siempre sabes a quién llamar. Respondemos cartas, ajustamos la estrategia y te acompañamos todo el año.</p></div></div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat" data-reveal><strong data-count="8">8</strong><p>Servicios contables y fiscales</p></div>
+      <div class="stat" data-reveal><strong data-count="3">3</strong><p>Trámites de principio a fin</p></div>
+      <div class="stat" data-reveal><strong data-count="2">2</strong><p>Idiomas: español e inglés</p></div>
+      <div class="stat" data-reveal><strong data-count="1">1</strong><p>Solo equipo para todo</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTERNACIONAL ============ -->
+<section class="section" id="internacional">
   <div class="container split">
-    <div class="reveal">
-      <p class="eyebrow eyebrow--light">Impuestos internacionales</p>
-      <h2 class="h-section">Ingresos sin fronteras, <em>impuestos en regla.</em></h2>
-      <p class="lead">¿Tienes cuentas, propiedades o socios fuera de Estados Unidos? Te ayudamos a cumplir con todo lo que exige la ley, evitar la doble tributación y dormir tranquilo.</p>
-      <ul class="list-feature">
-        <li><a href="impuestos-internacionales.html#personales"><span class="card__ic"><svg class="ic"><use href="#i-globe"/></svg></span><span><b>Declaraciones personales con ingresos internacionales</b><small>Salarios, rentas, inversiones y cuentas bancarias en el exterior.</small></span><svg class="ic ic-go"><use href="#i-arrow"/></svg></a></li>
-        <li><a href="impuestos-internacionales.html#socios-extranjeros"><span class="card__ic"><svg class="ic"><use href="#i-handshake"/></svg></span><span><b>Declaraciones empresariales con socios extranjeros</b><small>LLC y sociedades con dueños que viven fuera de EE. UU.</small></span><svg class="ic ic-go"><use href="#i-arrow"/></svg></a></li>
-        <li><a href="impuestos-internacionales.html#asesoria"><span class="card__ic"><svg class="ic"><use href="#i-scale"/></svg></span><span><b>Asesoría en requisitos de ley</b><small>Para ingresos internacionales y contribuyentes extranjeros.</small></span><svg class="ic ic-go"><use href="#i-arrow"/></svg></a></li>
+    <div class="visual">
+      <div class="frame" data-curtain><img src="assets/img/photos/internacional.webp" alt="Pasaporte sobre un mapa del mundo" loading="lazy" data-speed=".14" /></div>
+      <div class="badge" aria-hidden="true">
+        <svg class="badge__ring" viewBox="0 0 150 150"><defs><path id="ring" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs><text><textPath href="#ring">IMPUESTOS · INTERNACIONALES · SIN FRONTERAS ·</textPath></text></svg>
+        <svg class="brand__mark"><use href="#i-globe"/></svg>
+      </div>
+    </div>
+    <div class="split__text">
+      <p class="label"><b>(05)</b> Impuestos internacionales</p>
+      <h2 class="h2" data-split>Ingresos sin fronteras, <em>impuestos en regla.</em></h2>
+      <p class="split__lead" data-reveal>¿Tienes cuentas, propiedades o socios fuera de Estados Unidos? Te ayudamos a cumplir con todo lo que exige la ley y a no pagar dos veces por el mismo ingreso.</p>
+      <ul class="nlist" data-reveal>
+        <li><a href="impuestos-internacionales.html#personales" data-cursor="Ver"><small>01</small><span><b>Declaraciones personales con ingresos internacionales</b><span>Salarios, rentas, inversiones y cuentas en el exterior.</span></span><svg class="ic"><use href="#i-ne"/></svg></a></li>
+        <li><a href="impuestos-internacionales.html#socios-extranjeros" data-cursor="Ver"><small>02</small><span><b>Declaraciones empresariales con socios extranjeros</b><span>LLC y sociedades con dueños que viven fuera de EE. UU.</span></span><svg class="ic"><use href="#i-ne"/></svg></a></li>
+        <li><a href="impuestos-internacionales.html#asesoria" data-cursor="Ver"><small>03</small><span><b>Asesoría en requisitos de ley</b><span>Para ingresos internacionales y contribuyentes extranjeros.</span></span><svg class="ic"><use href="#i-ne"/></svg></a></li>
       </ul>
     </div>
+  </div>
+</section>
 
-    <div class="globe reveal" aria-hidden="true">
-      <svg viewBox="0 0 400 400">
-        <circle class="globe__ring" cx="200" cy="200" r="150"/>
-        <ellipse class="globe__ring" cx="200" cy="200" rx="150" ry="55"/>
-        <ellipse class="globe__ring" cx="200" cy="200" rx="150" ry="105"/>
-        <ellipse class="globe__ring" cx="200" cy="200" rx="55" ry="150"/>
-        <ellipse class="globe__ring" cx="200" cy="200" rx="105" ry="150"/>
-        <line class="globe__ring" x1="50" y1="200" x2="350" y2="200"/>
-        <circle class="globe__orbit" cx="200" cy="200" r="185"/>
-        <path d="M120 150 Q200 60 285 135" fill="none" stroke="#d9ac52" stroke-width="1.6" stroke-dasharray="4 6"/>
-        <path d="M140 270 Q230 330 300 230" fill="none" stroke="#7cc9a8" stroke-width="1.6" stroke-dasharray="4 6"/>
-        <circle class="globe__dot" cx="120" cy="150" r="6"/>
-        <circle class="globe__dot" cx="285" cy="135" r="6"/>
-        <circle class="globe__dot globe__dot--g" cx="140" cy="270" r="6"/>
-        <circle class="globe__dot globe__dot--g" cx="300" cy="230" r="6"/>
-      </svg>
-      <span class="globe__tag" style="left:2%;top:18%"><svg class="ic"><use href="#i-flag"/></svg>EE. UU.</span>
-      <span class="globe__tag" style="right:0;top:42%;animation-delay:-2s"><svg class="ic"><use href="#i-file"/></svg>FBAR · FATCA</span>
-      <span class="globe__tag" style="left:8%;bottom:12%;animation-delay:-4s"><svg class="ic"><use href="#i-handshake"/></svg>Socios extranjeros</span>
+<!-- ============ A QUIÉN AYUDAMOS (galería horizontal) ============ -->
+<section class="hgallery">
+  <div class="hgallery__pin">
+    <div class="container hgallery__head">
+      <p class="label label--light"><b style="color:#fff">(06)</b> A quién ayudamos</p>
+      <div class="hgallery__progress"><i></i></div>
+    </div>
+    <div class="hgallery__track">
+      <div class="hgallery__title">
+        <h2 class="h2">Para cada etapa <em>de tu vida financiera.</em></h2>
+        <p>Desde tu primera declaración hasta una empresa con socios en otro país.</p>
+      </div>
+      <figure class="hcard hcard--tall"><div class="hcard__img"><img src="assets/img/photos/familia.webp" alt="Emprendedora atendiendo su puesto" loading="lazy" /></div><figcaption><span>Familias</span><small>Personales</small></figcaption></figure>
+      <figure class="hcard"><div class="hcard__img"><img src="assets/img/photos/sales-tax.webp" alt="Dueña de una cafetería" loading="lazy" /></div><figcaption><span>Dueños de negocio</span><small>Contabilidad</small></figcaption></figure>
+      <figure class="hcard hcard--tall"><div class="hcard__img"><img src="assets/img/photos/contratista.webp" alt="Comerciante en su tienda" loading="lazy" /></div><figcaption><span>Independientes</span><small>1099</small></figcaption></figure>
+      <figure class="hcard"><div class="hcard__img"><img src="assets/img/photos/reunion.webp" alt="Equipo en una reunión de trabajo" loading="lazy" /></div><figcaption><span>Empresas</span><small>Nómina</small></figcaption></figure>
+      <figure class="hcard hcard--tall"><div class="hcard__img"><img src="assets/img/photos/sellos.webp" alt="Pasaporte con sellos de viaje" loading="lazy" /></div><figcaption><span>Extranjeros</span><small>Internacional</small></figcaption></figure>
+      <a class="hcard hcard--cta" href="contacto.html#agenda" data-cursor="Hablemos"><span>Tu caso</span><strong>¿Dónde<br />encajas tú?</strong><svg class="ic"><use href="#i-ne"/></svg></a>
     </div>
   </div>
 </section>
@@ -369,111 +380,90 @@
 <!-- ============ QUIÉNES SOMOS ============ -->
 <section class="section" id="nosotros">
   <div class="container split split--rev">
-    <div class="reveal">
-      <p class="eyebrow">Quiénes somos</p>
-      <h2 class="h-section">Un equipo que te conoce <em>por tu nombre.</em></h2>
-      <p class="lead">Somos profesionales en contabilidad e impuestos que entienden a la comunidad hispana porque somos parte de ella. Nuestra meta es simple: que cada cliente tenga claridad sobre su dinero y la tranquilidad de estar en regla.</p>
-      <div class="mv">
-        <div class="mv__item"><h3><svg class="ic"><use href="#i-flag"/></svg>Misión</h3><p>Brindar servicios contables y fiscales de alta calidad, cercanos y accesibles, que den tranquilidad a familias y negocios.</p></div>
-        <div class="mv__item"><h3><svg class="ic"><use href="#i-eye"/></svg>Visión</h3><p>Ser el aliado financiero de confianza de nuestra comunidad, en Estados Unidos y más allá de sus fronteras.</p></div>
-      </div>
-      <div class="svc__actions"><a class="btn btn--primary" href="quienes-somos.html">Conoce al equipo <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+    <div class="visual">
+      <div class="frame" data-curtain><img src="assets/img/photos/equipo.webp" alt="Equipo revisando documentos en una mesa de trabajo" loading="lazy" data-speed=".14" /></div>
     </div>
-    <div class="about-visual reveal" aria-hidden="true">
-      <div class="about-visual__frame"><svg class="about-visual__mark"><use href="#i-logo"/></svg></div>
-      <div class="about-visual__badge">All in One<span>Professional Services</span></div>
-      <div class="about-visual__quote"><em>“Lo hacemos por ti.”</em>Tú te enfocas en tu familia y tu negocio; nosotros, en que todo esté en regla.</div>
+    <div class="split__text">
+      <p class="label"><b>(07)</b> Quiénes somos</p>
+      <h2 class="h2" data-split>Un equipo que te conoce <em>por tu nombre.</em></h2>
+      <p class="split__lead" data-reveal>Profesionales en contabilidad e impuestos que entienden a la comunidad hispana porque son parte de ella.</p>
+      <div class="cols" data-reveal>
+        <p>Nuestra misión es brindar servicios contables, fiscales y de trámites de alta calidad, cercanos y accesibles.</p>
+        <p>Nuestra visión: ser el aliado financiero de confianza de nuestra comunidad, en Estados Unidos y más allá.</p>
+      </div>
+      <ul class="values" data-reveal>
+        <li>Integridad<span>Lo correcto, aunque no sea lo más fácil.</span></li>
+        <li>Claridad<span>Cada número, explicado.</span></li>
+        <li>Compromiso<span>Contigo todo el año.</span></li>
+      </ul>
+      <a class="link" href="quienes-somos.html">Conoce al equipo <svg class="ic"><use href="#i-ne"/></svg></a>
     </div>
   </div>
 </section>
 
 <!-- ============ PROCESO ============ -->
-<section class="section section--mist">
+<section class="section section--paper">
   <div class="container">
-    <div class="section-head section-head--center">
-      <p class="eyebrow">Cómo trabajamos</p>
-      <h2 class="h-section">Simple, claro y <em>sin sorpresas</em></h2>
-    </div>
-    <div class="steps stagger">
-      <div class="step reveal"><h3>Consulta inicial</h3><p>Nos cuentas tu situación y tus metas. Te decimos qué necesitas y cuánto cuesta, sin compromiso.</p></div>
-      <div class="step reveal"><h3>Plan a tu medida</h3><p>Diseñamos el servicio y el calendario de fechas que aplica a tu caso, personal o empresarial.</p></div>
-      <div class="step reveal"><h3>Nos encargamos</h3><p>Reunimos tus documentos, preparamos todo y lo presentamos a tiempo ante el IRS y el estado.</p></div>
-      <div class="step reveal"><h3>Te acompañamos</h3><p>Seguimiento todo el año: respondemos cartas, ajustamos estrategias y resolvemos tus dudas.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PILARES ============ -->
-<section class="section section--white">
-  <div class="container">
-    <div class="section-head section-head--split">
+    <div class="head-split">
       <div>
-        <p class="eyebrow">Por qué elegirnos</p>
-        <h2 class="h-section">Somos tu <em>mejor solución</em></h2>
+        <p class="label"><b>(08)</b> Cómo trabajamos</p>
+        <h2 class="h2" data-split>Simple, claro <em>y sin sorpresas.</em></h2>
       </div>
-      <p class="lead">No preparamos solo una declaración: construimos contigo una base financiera ordenada para que tomes mejores decisiones.</p>
     </div>
-    <div class="pillars stagger">
-      <div class="pillar reveal"><span class="card__ic"><svg class="ic"><use href="#i-target"/></svg></span><h3>Orden y estrategia</h3><p>Ponemos tus números en orden y los convertimos en un plan para pagar lo justo y crecer con estructura.</p></div>
-      <div class="pillar reveal"><span class="card__ic"><svg class="ic"><use href="#i-scale"/></svg></span><h3>Cumplimiento legal</h3><p>Cada declaración y cada trámite se hace conforme a la ley federal y estatal. Nada de atajos riesgosos.</p></div>
-      <div class="pillar reveal"><span class="card__ic"><svg class="ic"><use href="#i-heart"/></svg></span><h3>Soporte al 100%</h3><p>Siempre sabes a quién llamar. Te respondemos en tu idioma y te explicamos cada paso con claridad.</p></div>
-    </div>
+    <ol class="steps">
+      <li class="step" data-reveal><span class="step__bar"><i></i></span><span class="step__num">01</span><h3>Consulta inicial</h3><p>Nos cuentas tu situación. Te decimos qué necesitas y cuánto cuesta, sin compromiso.</p></li>
+      <li class="step" data-reveal><span class="step__bar"><i></i></span><span class="step__num">02</span><h3>Plan a tu medida</h3><p>Definimos el servicio y el calendario de fechas que aplica a tu caso.</p></li>
+      <li class="step" data-reveal><span class="step__bar"><i></i></span><span class="step__num">03</span><h3>Nos encargamos</h3><p>Reunimos tus documentos, preparamos todo y lo presentamos a tiempo.</p></li>
+      <li class="step" data-reveal><span class="step__bar"><i></i></span><span class="step__num">04</span><h3>Te acompañamos</h3><p>Seguimiento todo el año: cartas, ajustes y respuestas cuando las necesites.</p></li>
+    </ol>
   </div>
 </section>
 
-<!-- ============ PREGUNTAS FRECUENTES ============ -->
+<!-- ============ FAQ ============ -->
 <section class="section">
-  <div class="container">
-    <div class="section-head section-head--center">
-      <p class="eyebrow">Preguntas frecuentes</p>
-      <h2 class="h-section">Resolvemos tus <em>dudas</em></h2>
+  <div class="container split">
+    <div>
+      <p class="label"><b>(09)</b> Preguntas frecuentes</p>
+      <h2 class="h2" data-split>Resolvemos <em>tus dudas.</em></h2>
+      <p class="lead">¿No ves tu pregunta? Escríbenos y te respondemos en menos de un día hábil.</p>
     </div>
-    <div class="faq">
-      <details class="reveal"><summary>¿Trabajan solo con empresas o también con personas?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Con ambos. Preparamos declaraciones personales y familiares, y también llevamos la contabilidad, nómina e impuestos de negocios de todos los tamaños.</p></details>
-      <details class="reveal"><summary>¿Puedo declarar impuestos si no tengo número de Seguro Social?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Sí. Si no eres elegible para un SSN, puedes declarar con un ITIN. Te ayudamos a solicitarlo o renovarlo con el formulario W-7 junto con tu declaración.</p></details>
-      <details class="reveal"><summary>Recibí una carta del IRS, ¿qué hago?<svg class="ic"><use href="#i-plus"/></svg></summary><p>No la ignores y respeta la fecha límite que indica. Envíanos una copia: la revisamos, te explicamos qué significa y preparamos la respuesta o el plan de pago adecuado.</p></details>
-      <details class="reveal"><summary>Tengo ingresos o cuentas en otro país, ¿debo reportarlos?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Si eres residente fiscal de EE. UU., en general debes reportar tus ingresos de todo el mundo y, según los saldos, tus cuentas extranjeras (FBAR y formulario 8938). Revisamos tu caso y aplicamos los créditos para evitar la doble tributación.</p></details>
-      <details class="reveal"><summary>¿Atienden de forma remota?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Sí. Puedes visitarnos en la oficina o trabajar con nosotros por teléfono, videollamada y correo, enviando tus documentos de forma segura.</p></details>
+    <div class="faq" data-reveal>
+      <details><summary><small>01</small>¿Trabajan con personas o solo con empresas?<i></i></summary><p>Con ambos. Preparamos declaraciones personales y familiares, y llevamos la contabilidad, nómina e impuestos de negocios de todos los tamaños.</p></details>
+      <details><summary><small>02</small>¿Puedo declarar si no tengo Seguro Social?<i></i></summary><p>Sí. Si no eres elegible para un SSN, puedes declarar con un ITIN. Te ayudamos a solicitarlo o renovarlo con el formulario W-7 junto con tu declaración.</p></details>
+      <details><summary><small>03</small>Recibí una carta del IRS, ¿qué hago?<i></i></summary><p>No la ignores y respeta la fecha límite que indica. Envíanos una copia: la revisamos, te explicamos qué significa y preparamos la respuesta o el plan de pago adecuado.</p></details>
+      <details><summary><small>04</small>Tengo cuentas en otro país, ¿debo reportarlas?<i></i></summary><p>Si eres residente fiscal de EE. UU., en general debes reportar tus ingresos de todo el mundo y, según los saldos, tus cuentas extranjeras (FBAR y formulario 8938). Revisamos tu caso y aplicamos los créditos para evitar la doble tributación.</p></details>
+      <details><summary><small>05</small>¿Atienden de forma remota?<i></i></summary><p>Sí. Puedes visitarnos en la oficina o trabajar con nosotros por teléfono, videollamada y correo, enviando tus documentos de forma segura.</p></details>
     </div>
   </div>
 </section>
 
-<section class="section section--tight">
-  <div class="container">
-    <div class="cta on-dark">
-      <div class="cta__glow" aria-hidden="true"></div>
-      <div class="cta__text">
-        <p class="eyebrow eyebrow--light">Tu primera consulta</p>
-        <h2>Cuéntanos tu caso. <em>Nosotros nos encargamos.</em></h2>
-        <p>En una llamada revisamos tu situación, te decimos qué necesitas y cuánto cuesta. Sin compromiso y sin letra pequeña.</p>
-      </div>
-      <div class="cta__actions">
-        <a class="btn btn--gold btn--lg" href="contacto.html#agenda">Agenda tu consulta <svg class="ic"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--ghost-light btn--lg" href="tel:+10000000000"><svg class="ic"><use href="#i-phone"/></svg>(XXX) XXX-XXXX</a>
-      </div>
+<section class="band">
+  <div class="band__media"><img src="assets/img/photos/noche.webp" alt="" loading="lazy" decoding="async" /></div>
+  <div class="band__shade"></div>
+  <div class="band__content container">
+    <p class="label label--light">Tu primera consulta</p>
+    <h2 class="band__title" data-split>Cuéntanos <em>tu caso.</em></h2>
+    <p>En una llamada revisamos tu situación, te decimos qué necesitas y cuánto cuesta. Sin compromiso y sin letra pequeña.</p>
+    <div class="band__actions">
+      <a class="btn btn--light magnetic" href="contacto.html#agenda"><span class="btn__text">Agenda tu consulta</span><span class="btn__icon"><svg class="ic"><use href="#i-ne"/></svg></span></a>
+      <a class="btn btn--outline magnetic" href="tel:+10000000000"><span class="btn__text">(XXX) XXX-XXXX</span></a>
     </div>
   </div>
 </section>
 
 </main>
-<footer class="footer on-dark">
+<footer class="footer">
   <div class="container">
     <div class="footer__top">
       <div class="footer__brand">
-        <a class="brand brand--light" href="./" aria-label="All in One Professional Services — Inicio">
+        <a class="brand" href="./" aria-label="All in One Professional Services — Inicio">
           <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
-          <span class="brand__text"><b>All in One</b><small>Professional Services</small></span>
+          <span class="brand__name"><b>All in One</b><small>Professional Services</small></span>
         </a>
-        <p>Contabilidad, impuestos y trámites para personas y negocios. Todo lo que necesitas, con un solo equipo que te conoce.</p>
-        <div class="social">
-          <a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-facebook"/></svg></a>
-          <a href="#" aria-label="Instagram"><svg class="ic"><use href="#i-instagram"/></svg></a>
-          <a href="#" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a>
-        </div>
+        <p>Contabilidad, impuestos y trámites para familias y negocios. Un solo equipo que conoce tu historia completa.</p>
       </div>
-
       <nav class="footer__col" aria-label="Servicios">
-        <h2>Servicios</h2>
+        <small>Servicios</small>
         <a href="servicios.html#contabilidad">Contabilidad</a>
         <a href="servicios.html#nomina">Nómina</a>
         <a href="servicios.html#sales-tax">Sales Tax</a>
@@ -481,48 +471,42 @@
         <a href="servicios.html#impuestos-empresariales">Impuestos empresariales</a>
         <a href="servicios.html#resolucion">Resolución de problemas</a>
         <a href="servicios.html#estrategias">Estrategias fiscales</a>
-        <a href="servicios.html#notaria">Servicios de notaría</a>
+        <a href="servicios.html#notaria">Notaría</a>
       </nav>
-
       <nav class="footer__col" aria-label="Trámites e internacional">
-        <h2>Trámites</h2>
+        <small>Trámites</small>
         <a href="tramites.html#creacion-empresas">Creación de empresas</a>
         <a href="tramites.html#itin">ITIN</a>
         <a href="tramites.html#cierre-empresas">Cierre de empresas</a>
-        <h2 class="footer__h-gap">Internacional</h2>
+        <small style="margin-top:22px">Internacional</small>
         <a href="impuestos-internacionales.html#personales">Ingresos internacionales</a>
         <a href="impuestos-internacionales.html#socios-extranjeros">Socios extranjeros</a>
         <a href="impuestos-internacionales.html#asesoria">Asesoría legal</a>
       </nav>
-
       <div class="footer__col">
-        <h2>Contacto</h2>
-        <a class="footer__contact" href="tel:+10000000000"><svg class="ic"><use href="#i-phone"/></svg>(XXX) XXX-XXXX</a>
-        <a class="footer__contact" href="mailto:correo@empresa.com"><svg class="ic"><use href="#i-mail"/></svg>correo@empresa.com</a>
-        <p class="footer__contact"><svg class="ic"><use href="#i-pin"/></svg><span>Dirección de la oficina<br />Ciudad, TX 00000</span></p>
-        <p class="footer__contact"><svg class="ic"><use href="#i-clock"/></svg>Lunes a Viernes · 9:00 am – 6:00 pm</p>
-        <a class="footer__link-strong" href="quienes-somos.html">Conoce al equipo <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <small>Contacto</small>
+        <a href="tel:+10000000000">(XXX) XXX-XXXX</a>
+        <a href="mailto:correo@empresa.com">correo@empresa.com</a>
+        <span>Dirección de la oficina, Ciudad, TX 00000</span>
+        <span>Lunes a Viernes · 9:00 am – 6:00 pm</span>
+        <small style="margin-top:22px">Síguenos</small>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
       </div>
     </div>
-
-    <div class="footer__big" aria-hidden="true"><span>All in <em>One</em></span></div>
-
+    <div class="footer__big" aria-hidden="true"><span>All in</span><span>One</span></div>
     <div class="footer__bottom">
-      <p>© 2026 All in One Professional Services. Todos los derechos reservados.</p>
-      <p class="footer__note">La información de este sitio es general y no constituye asesoría legal o fiscal para tu caso. Agenda una consulta para revisarlo con nosotros.</p>
+      <p>© 2026 All in One Professional Services</p>
+      <p>La información de este sitio es general y no constituye asesoría legal o fiscal para tu caso.</p>
     </div>
   </div>
 </footer>
 
-<a class="fab" href="https://wa.me/10000000000" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
-  <svg class="ic"><use href="#i-whatsapp"/></svg>
-</a>
+<a class="wa-float" href="https://wa.me/10000000000" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg class="ic"><use href="#i-whatsapp"/></svg></a>
 
 <script src="assets/vendor/gsap.min.js" defer></script>
 <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="assets/vendor/lenis.min.js" defer></script>
 <script src="assets/js/main.js" defer></script>
-<script src="assets/js/motion.js" defer></script>
-</body>
-</html>
 

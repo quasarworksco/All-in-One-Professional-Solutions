@@ -15,7 +15,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Contacto — Agenda tu consulta | All in One Professional Services</title>
 <meta name="description" content="Agenda tu consulta con All in One Professional Services. Llámanos, escríbenos por WhatsApp o envíanos tu caso y te respondemos en menos de un día hábil." />
-<meta name="theme-color" content="#0a2c22" />
+<meta name="theme-color" content="#0b1310" />
 <link rel="canonical" href="https://allinone.dgp-link.com/contacto.html" />
 
 
@@ -34,9 +34,9 @@
 <meta name="twitter:image" content="https://allinone.dgp-link.com/assets/img/og-image.jpg" />
 
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="preload" href="assets/fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/instrument-serif-italic-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" as="image" href="assets/img/photos/personales.webp" fetchpriority="high" />
 <link rel="stylesheet" href="assets/css/styles.css" />
 
 <script type="application/ld+json">
@@ -60,7 +60,7 @@
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <symbol id="i-logo" viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M15 31v-4M21 31v-9M27 31V18" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/><path d="M33 31V13" fill="none" stroke="var(--logo-accent,#d9ac52)" stroke-width="3.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M15 31v-4M21 31v-9M27 31V18" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/><path d="M33 31V13" fill="none" stroke="var(--logo-accent,#c9a45c)" stroke-width="3.6" stroke-linecap="round"/></symbol>
     <symbol id="i-ledger" viewBox="0 0 24 24"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/><path d="M9 7.5h6M9 11h6M9 14.5h3"/></symbol>
     <symbol id="i-payroll" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M17 6.5v9M19.5 8.2c-.4-.8-1.3-1.2-2.5-1.2-1.4 0-2.4.7-2.4 1.7 0 2.4 5 1.2 5 3.8 0 1-1.1 1.8-2.6 1.8-1.2 0-2.2-.5-2.6-1.3"/></symbol>
     <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-2.5-1.6L13 21l-2-1.6L8.5 21 6 19.4z"/><path d="M9 8h6M9 11.5h6M9 15h4"/></symbol>
@@ -79,6 +79,7 @@
     <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
     <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-ne" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
     <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
@@ -102,216 +103,176 @@
 
 
 <div class="preloader" aria-hidden="true">
-  <div class="preloader__in">
-    <svg class="preloader__mark" viewBox="0 0 48 48" fill="none" stroke-linecap="round"><circle cx="24" cy="24" r="19" stroke="currentColor" stroke-width="3.2"/><path d="M15 31v-4M21 31v-9M27 31V18" stroke="currentColor" stroke-width="3.6"/><path d="M33 31V13" stroke="#d9ac52" stroke-width="3.6"/></svg>
-    <div class="preloader__word"><span>All</span>&nbsp;<span>in</span>&nbsp;<span>One</span></div>
-    <div class="preloader__bar"><i></i></div>
+  <div class="preloader__top"><span>All in One Professional Services</span><span>Contabilidad · Impuestos · Trámites</span></div>
+  <div class="preloader__center">
+    <svg class="preloader__mark" viewBox="0 0 48 48" fill="none" stroke-linecap="round"><circle cx="24" cy="24" r="19" stroke="#fff" stroke-width="2.4"/><path d="M15 31v-4M21 31v-9M27 31V18" stroke="#fff" stroke-width="3"/><path d="M33 31V13" stroke="#c9a45c" stroke-width="3"/></svg>
   </div>
-  <span class="preloader__num">0</span>
+  <div class="preloader__bottom"><span>Cargando</span><span class="preloader__count"><span class="preloader__num">0</span><small>%</small></span></div>
+  <span class="preloader__line"></span>
 </div>
 
-<div class="topbar">
-  <div class="container topbar__in">
-    <p class="topbar__item"><svg class="ic"><use href="#i-pin"/></svg><span>Dirección de la oficina, Ciudad, TX 00000</span></p>
-    <div class="topbar__right">
-      <p class="topbar__item"><svg class="ic"><use href="#i-clock"/></svg><span>Lunes a Viernes · 9:00 am – 6:00 pm</span></p>
-      <a class="topbar__item topbar__phone" href="tel:+10000000000"><svg class="ic"><use href="#i-phone"/></svg><span>(XXX) XXX-XXXX</span></a>
-      <span class="topbar__lang" title="Atendemos en español e inglés">ES · EN</span>
-    </div>
-  </div>
+<div class="cursor is-hidden" aria-hidden="true">
+  <span class="cursor__blob"></span><span class="cursor__dot"></span>
+  <span class="cursor__label"><span>Ver</span></span>
 </div>
 
-<header class="header" id="header">
-  <div class="container header__in">
-    <a class="brand" href="./" aria-label="All in One Professional Services — Inicio">
-      <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
-      <span class="brand__text"><b>All in One</b><small>Professional Services</small></span>
-    </a>
+<header class="nav" id="nav">
+  <a class="brand" href="./" aria-label="All in One Professional Services — Inicio">
+    <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+    <span class="brand__name"><b>All in One</b><small>Professional Services</small></span>
+  </a>
 
-    <nav class="nav" id="nav" aria-label="Principal">
-      <div class="nav__head">
-        <span class="brand__text"><b>All in One</b><small>Professional Services</small></span>
-        <button class="icon-btn" type="button" data-nav-close aria-label="Cerrar menú"><svg class="ic"><use href="#i-close"/></svg></button>
+  <ul class="nav__links">
+    <li class="nav__item"><a class="nav__link" href="quienes-somos.html"><span class="roll"><span data-text="Quiénes Somos">Quiénes Somos</span></span></a></li>
+    <li class="nav__item has-menu">
+      <button class="nav__link" type="button" aria-expanded="false" aria-controls="m-servicios"><span class="roll"><span data-text="Servicios">Servicios</span></span><svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
+      <div class="menu menu--wide" id="m-servicios">
+        <div class="menu__grid">
+          <a class="menu__link" href="servicios.html#contabilidad"><small>01</small><b>Contabilidad</b><span>Bookkeeping y estados financieros</span></a>
+          <a class="menu__link" href="servicios.html#nomina"><small>02</small><b>Nómina</b><span>Payroll y reportes trimestrales</span></a>
+          <a class="menu__link" href="servicios.html#sales-tax"><small>03</small><b>Sales Tax</b><span>Permisos, cálculo y presentación</span></a>
+          <a class="menu__link" href="servicios.html#impuestos-personales"><small>04</small><b>Impuestos personales</b><span>Declaraciones individuales y familiares</span></a>
+          <a class="menu__link" href="servicios.html#impuestos-empresariales"><small>05</small><b>Impuestos empresariales</b><span>LLC, S-Corp, C-Corp y sociedades</span></a>
+          <a class="menu__link" href="servicios.html#resolucion"><small>06</small><b>Resolución de problemas</b><span>Cartas del IRS, auditorías y deudas</span></a>
+          <a class="menu__link" href="servicios.html#estrategias"><small>07</small><b>Estrategias fiscales</b><span>Planificación para pagar lo justo</span></a>
+          <a class="menu__link" href="servicios.html#notaria"><small>08</small><b>Servicios de notaría</b><span>Con notario público asociado</span></a>
+        </div>
+        <a class="menu__all" href="servicios.html">Ver todos los servicios <svg class="ic"><use href="#i-arrow"/></svg></a>
       </div>
-
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="quienes-somos.html">Quiénes Somos</a></li>
-
-        <li class="nav__item has-menu">
-          <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-servicios">Servicios <svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
-          <div class="menu menu--mega" id="menu-servicios">
-            <div class="menu__grid">
-              <a class="menu__link" href="servicios.html#contabilidad"><span class="menu__ic"><svg class="ic"><use href="#i-ledger"/></svg></span><span><b>Contabilidad</b><small>Bookkeeping mensual y estados financieros</small></span></a>
-              <a class="menu__link" href="servicios.html#nomina"><span class="menu__ic"><svg class="ic"><use href="#i-payroll"/></svg></span><span><b>Nómina</b><small>Payroll, depósitos y reportes trimestrales</small></span></a>
-              <a class="menu__link" href="servicios.html#sales-tax"><span class="menu__ic"><svg class="ic"><use href="#i-receipt"/></svg></span><span><b>Sales Tax</b><small>Permisos, cálculo y presentación</small></span></a>
-              <a class="menu__link" href="servicios.html#impuestos-personales"><span class="menu__ic"><svg class="ic"><use href="#i-user"/></svg></span><span><b>Impuestos personales</b><small>Declaraciones individuales y familiares</small></span></a>
-              <a class="menu__link" href="servicios.html#impuestos-empresariales"><span class="menu__ic"><svg class="ic"><use href="#i-building"/></svg></span><span><b>Impuestos empresariales</b><small>LLC, S-Corp, C-Corp y sociedades</small></span></a>
-              <a class="menu__link" href="servicios.html#resolucion"><span class="menu__ic"><svg class="ic"><use href="#i-shield"/></svg></span><span><b>Resolución de problemas</b><small>Cartas del IRS, auditorías y deudas</small></span></a>
-              <a class="menu__link" href="servicios.html#estrategias"><span class="menu__ic"><svg class="ic"><use href="#i-target"/></svg></span><span><b>Estrategias fiscales</b><small>Planificación para pagar lo justo</small></span></a>
-              <a class="menu__link" href="servicios.html#notaria"><span class="menu__ic"><svg class="ic"><use href="#i-stamp"/></svg></span><span><b>Servicios de notaría</b><small>Con notario público asociado</small></span></a>
-            </div>
-            <a class="menu__all" href="servicios.html">Ver todos los servicios <svg class="ic"><use href="#i-arrow"/></svg></a>
-          </div>
-        </li>
-
-        <li class="nav__item has-menu">
-          <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-tramites">Trámites <svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
-          <div class="menu" id="menu-tramites">
-            <a class="menu__link" href="tramites.html#creacion-empresas"><span class="menu__ic"><svg class="ic"><use href="#i-briefcase"/></svg></span><span><b>Creación y registro de empresas</b><small>LLC y corporaciones, EIN incluido</small></span></a>
-            <a class="menu__link" href="tramites.html#itin"><span class="menu__ic"><svg class="ic"><use href="#i-idcard"/></svg></span><span><b>Solicitud y renovación de ITIN</b><small>Formulario W-7 de principio a fin</small></span></a>
-            <a class="menu__link" href="tramites.html#cierre-empresas"><span class="menu__ic"><svg class="ic"><use href="#i-archive"/></svg></span><span><b>Cierre y disolución de empresas</b><small>Cierre ordenado ante el estado y el IRS</small></span></a>
-            <a class="menu__all" href="tramites.html">Ver todos los trámites <svg class="ic"><use href="#i-arrow"/></svg></a>
-          </div>
-        </li>
-
-        <li class="nav__item has-menu">
-          <button class="nav__link" type="button" aria-expanded="false" aria-controls="menu-internacional">Impuestos Internacionales <svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
-          <div class="menu" id="menu-internacional">
-            <a class="menu__link" href="impuestos-internacionales.html#personales"><span class="menu__ic"><svg class="ic"><use href="#i-globe"/></svg></span><span><b>Declaraciones personales con ingresos internacionales</b><small>Cuentas, rentas y salarios del exterior</small></span></a>
-            <a class="menu__link" href="impuestos-internacionales.html#socios-extranjeros"><span class="menu__ic"><svg class="ic"><use href="#i-handshake"/></svg></span><span><b>Declaraciones empresariales con socios extranjeros</b><small>Sociedades y LLC con dueños fuera de EE. UU.</small></span></a>
-            <a class="menu__link" href="impuestos-internacionales.html#asesoria"><span class="menu__ic"><svg class="ic"><use href="#i-scale"/></svg></span><span><b>Asesoría en requisitos de ley</b><small>Para ingresos internacionales y contribuyentes extranjeros</small></span></a>
-            <a class="menu__all" href="impuestos-internacionales.html">Ver impuestos internacionales <svg class="ic"><use href="#i-arrow"/></svg></a>
-          </div>
-        </li>
-
-        <li class="nav__item"><a class="nav__link" href="contacto.html" aria-current="page">Contacto</a></li>
-      </ul>
-
-      <div class="nav__foot">
-        <a class="btn btn--gold btn--block" href="contacto.html#agenda">Agenda tu consulta <svg class="ic"><use href="#i-arrow"/></svg></a>
-        <a class="nav__contact" href="tel:+10000000000"><svg class="ic"><use href="#i-phone"/></svg>(XXX) XXX-XXXX</a>
+    </li>
+    <li class="nav__item has-menu">
+      <button class="nav__link" type="button" aria-expanded="false" aria-controls="m-tramites"><span class="roll"><span data-text="Trámites">Trámites</span></span><svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
+      <div class="menu" id="m-tramites">
+        <a class="menu__link" href="tramites.html#creacion-empresas"><small>01</small><b>Creación y registro de empresas</b><span>LLC y corporaciones, con EIN</span></a>
+        <a class="menu__link" href="tramites.html#itin"><small>02</small><b>Solicitud y renovación de ITIN</b><span>Formulario W-7 de principio a fin</span></a>
+        <a class="menu__link" href="tramites.html#cierre-empresas"><small>03</small><b>Cierre y disolución de empresas</b><span>Cierre ordenado ante el estado y el IRS</span></a>
+        <a class="menu__all" href="tramites.html">Ver todos los trámites <svg class="ic"><use href="#i-arrow"/></svg></a>
       </div>
-    </nav>
+    </li>
+    <li class="nav__item has-menu">
+      <button class="nav__link" type="button" aria-expanded="false" aria-controls="m-internacional"><span class="roll"><span data-text="Impuestos Internacionales">Impuestos Internacionales</span></span><svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
+      <div class="menu" id="m-internacional">
+        <a class="menu__link" href="impuestos-internacionales.html#personales"><small>01</small><b>Declaraciones personales con ingresos internacionales</b><span>Cuentas, rentas y salarios del exterior</span></a>
+        <a class="menu__link" href="impuestos-internacionales.html#socios-extranjeros"><small>02</small><b>Declaraciones empresariales con socios extranjeros</b><span>Empresas con dueños fuera de EE. UU.</span></a>
+        <a class="menu__link" href="impuestos-internacionales.html#asesoria"><small>03</small><b>Asesoría en requisitos de ley</b><span>Para ingresos internacionales y contribuyentes extranjeros</span></a>
+        <a class="menu__all" href="impuestos-internacionales.html">Ver impuestos internacionales <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </li>
+    <li class="nav__item"><a class="nav__link" href="contacto.html" aria-current="page"><span class="roll"><span data-text="Contacto">Contacto</span></span></a></li>
+  </ul>
 
-    <div class="header__actions">
-      <a class="btn btn--primary header__cta" href="contacto.html#agenda">Agenda tu consulta <svg class="ic"><use href="#i-arrow"/></svg></a>
-      <button class="icon-btn header__burger" type="button" data-nav-open aria-controls="nav" aria-expanded="false" aria-label="Abrir menú"><svg class="ic"><use href="#i-menu"/></svg></button>
-    </div>
-  </div>
+  <a class="nav__cta" href="contacto.html#agenda">Agenda tu consulta</a>
+  <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mmenu"><span></span><span></span></button>
 </header>
-<div class="scrim" data-nav-close hidden></div>
+
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <nav class="mmenu__list" aria-label="Menú móvil">
+    <div class="mmenu__row"><a href="quienes-somos.html"><small>01</small>Quiénes Somos</a></div>
+    <div class="mmenu__row">
+      <button type="button" aria-expanded="false"><small>02</small>Servicios<svg class="ic"><use href="#i-plus"/></svg></button>
+      <div class="mmenu__sub"><div>
+        <a href="servicios.html#contabilidad">Contabilidad</a><a href="servicios.html#nomina">Nómina</a><a href="servicios.html#sales-tax">Sales Tax</a><a href="servicios.html#impuestos-personales">Impuestos personales</a><a href="servicios.html#impuestos-empresariales">Impuestos empresariales</a><a href="servicios.html#resolucion">Resolución de problemas</a><a href="servicios.html#estrategias">Estrategias fiscales</a><a href="servicios.html#notaria">Servicios de notaría</a>
+      </div></div>
+    </div>
+    <div class="mmenu__row">
+      <button type="button" aria-expanded="false"><small>03</small>Trámites<svg class="ic"><use href="#i-plus"/></svg></button>
+      <div class="mmenu__sub"><div>
+        <a href="tramites.html#creacion-empresas">Creación y registro de empresas</a><a href="tramites.html#itin">Solicitud y renovación de ITIN</a><a href="tramites.html#cierre-empresas">Cierre y disolución de empresas</a>
+      </div></div>
+    </div>
+    <div class="mmenu__row">
+      <button type="button" aria-expanded="false"><small>04</small>Internacional<svg class="ic"><use href="#i-plus"/></svg></button>
+      <div class="mmenu__sub"><div>
+        <a href="impuestos-internacionales.html#personales">Personas con ingresos internacionales</a><a href="impuestos-internacionales.html#socios-extranjeros">Empresas con socios extranjeros</a><a href="impuestos-internacionales.html#asesoria">Asesoría en requisitos de ley</a>
+      </div></div>
+    </div>
+    <div class="mmenu__row"><a href="contacto.html"><small>05</small>Contacto</a></div>
+  </nav>
+  <div class="mmenu__foot">
+    <a href="tel:+10000000000">(XXX) XXX-XXXX</a>
+    <a href="mailto:correo@empresa.com">correo@empresa.com</a>
+    <span>Lun – Vie · 9am – 6pm</span>
+  </div>
+</div>
 
 <main id="contenido">
-<section class="page-hero">
-  <div class="hero__grid-bg" aria-hidden="true"></div>
-  <div class="container">
-    <div class="page-hero__in">
-      <nav class="crumbs" aria-label="Ruta"><a href="./">Inicio</a><span aria-hidden="true">/</span><span>Contacto</span></nav>
-      <p class="eyebrow eyebrow--light">Contacto</p>
-      <h1>Hablemos de <em>tu caso.</em></h1>
-      <p class="lead">Cuéntanos qué necesitas y te respondemos en menos de un día hábil con los siguientes pasos y una cotización clara.</p>
+<section class="phero">
+  <div class="hero__media"><img src="assets/img/photos/personales.webp" alt="Pareja firmando documentos en un escritorio" fetchpriority="high" decoding="async" /></div>
+  <div class="hero__shade"></div>
+  <div class="container phero__in">
+    <nav class="crumbs" aria-label="Ruta" data-hero><a href="./">Inicio</a><span>/</span><span>Contacto</span></nav>
+    <h1 class="phero__title">Hablemos de <em>tu caso.</em></h1>
+    <div class="phero__foot" data-hero>
+      <p>Cuéntanos qué necesitas y te respondemos en menos de un día hábil con los siguientes pasos y una cotización clara.</p>
+      <div class="phero__index"><a href="tel:+10000000000">(XXX) XXX-XXXX</a><a href="mailto:correo@empresa.com">correo@empresa.com</a></div>
     </div>
   </div>
 </section>
 
 <section class="section" id="agenda">
-  <div class="container contact">
-    <div class="contact__info reveal">
-      <a class="info" href="tel:+10000000000"><span class="card__ic"><svg class="ic"><use href="#i-phone"/></svg></span><span><b>Llámanos</b><span>(XXX) XXX-XXXX</span></span></a>
-      <a class="info" href="https://wa.me/10000000000" target="_blank" rel="noopener"><span class="card__ic"><svg class="ic"><use href="#i-whatsapp"/></svg></span><span><b>WhatsApp</b><span>Escríbenos y te respondemos en horario de oficina</span></span></a>
-      <a class="info" href="mailto:correo@empresa.com"><span class="card__ic"><svg class="ic"><use href="#i-mail"/></svg></span><span><b>Correo</b><span>correo@empresa.com</span></span></a>
-      <div class="info"><span class="card__ic"><svg class="ic"><use href="#i-pin"/></svg></span><span><b>Oficina</b><span>Dirección de la oficina<br />Ciudad, TX 00000</span></span></div>
-      <div class="info"><span class="card__ic"><svg class="ic"><use href="#i-clock"/></svg></span><span style="flex:1"><b>Horario</b>
-        <ul class="hours"><li>Lunes a Viernes <b>9:00 am – 6:00 pm</b></li><li>Sábado <b>Con cita</b></li><li>Domingo <b>Cerrado</b></li></ul></span></div>
+  <div class="container contact__grid">
+    <div>
+      <p class="label"><b>(01)</b> Contacto</p>
+      <h2 class="h2" data-split>Estamos <em>para ayudarte.</em></h2>
+      <p class="lead" data-reveal>Visítanos en la oficina o trabajemos a distancia: por teléfono, videollamada o correo, enviando tus documentos de forma segura.</p>
+      <ul class="contact__list" data-reveal>
+        <li><small>Teléfono</small><a href="tel:+10000000000">(XXX) XXX-XXXX</a></li>
+        <li><small>WhatsApp</small><a href="https://wa.me/10000000000" target="_blank" rel="noopener">Escríbenos</a></li>
+        <li><small>Correo</small><a href="mailto:correo@empresa.com">correo@empresa.com</a></li>
+        <li><small>Oficina</small><span>Dirección de la oficina, Ciudad, TX 00000</span></li>
+        <li><small>Horario</small><span>Lunes a Viernes · 9:00 am – 6:00 pm</span></li>
+      </ul>
     </div>
 
-    <form class="form reveal" id="form-contacto" data-to="correo@empresa.com" novalidate>
-      <h2>Agenda tu consulta</h2>
-      <p>Completa el formulario y nos pondremos en contacto contigo.</p>
-
-      <div class="form__grid">
-        <div class="field">
-          <label for="f-nombre">Nombre completo</label>
-          <input id="f-nombre" name="nombre" type="text" autocomplete="name" required />
-          <span class="field__err">Escribe tu nombre.</span>
-        </div>
-        <div class="field">
-          <label for="f-telefono">Teléfono</label>
-          <input id="f-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+()\-\s]{7,}" required />
-          <span class="field__err">Escribe un teléfono válido.</span>
-        </div>
-        <div class="field form__full">
-          <label for="f-correo">Correo electrónico</label>
-          <input id="f-correo" name="correo" type="email" autocomplete="email" required />
-          <span class="field__err">Escribe un correo válido.</span>
-        </div>
-        <div class="field form__full">
-          <label for="f-servicio">¿En qué te podemos ayudar?</label>
-          <select id="f-servicio" name="servicio" required>
-            <option value="">Selecciona un servicio</option>
-            <optgroup label="Servicios">
-              <option>Contabilidad</option>
-              <option>Nómina</option>
-              <option>Sales Tax</option>
-              <option>Impuestos personales</option>
-              <option>Impuestos empresariales</option>
-              <option>Resolución de problemas de impuestos</option>
-              <option>Estrategias fiscales</option>
-              <option>Servicios de notaría</option>
-            </optgroup>
-            <optgroup label="Trámites">
-              <option>Creación y registro de empresas</option>
-              <option>Solicitud y renovación de ITIN</option>
-              <option>Cierre y disolución de empresas</option>
-            </optgroup>
-            <optgroup label="Impuestos internacionales">
-              <option>Declaración personal con ingresos internacionales</option>
-              <option>Declaración empresarial con socios extranjeros</option>
-              <option>Asesoría en requisitos de ley internacionales</option>
-            </optgroup>
-            <option>Otro / No estoy seguro</option>
-          </select>
-          <span class="field__err">Elige una opción.</span>
-        </div>
-        <fieldset class="field form__full" style="border:0;padding:0;margin:0">
-          <legend style="font-size:.86rem;font-weight:700;margin-bottom:.5rem">Soy</legend>
-          <div class="chips">
-            <label><input type="radio" name="perfil" value="Persona" checked /><span>Persona / familia</span></label>
-            <label><input type="radio" name="perfil" value="Negocio" /><span>Dueño de negocio</span></label>
-            <label><input type="radio" name="perfil" value="Contribuyente extranjero" /><span>Contribuyente extranjero</span></label>
-          </div>
-        </fieldset>
-        <fieldset class="field form__full" style="border:0;padding:0;margin:0">
-          <legend style="font-size:.86rem;font-weight:700;margin-bottom:.5rem">Prefiero que me contacten por</legend>
-          <div class="chips">
-            <label><input type="radio" name="canal" value="Llamada" checked /><span>Llamada</span></label>
-            <label><input type="radio" name="canal" value="WhatsApp" /><span>WhatsApp</span></label>
-            <label><input type="radio" name="canal" value="Correo" /><span>Correo</span></label>
-          </div>
-        </fieldset>
-        <div class="field form__full">
-          <label for="f-mensaje">Cuéntanos brevemente tu caso <span style="font-weight:500;color:var(--ink-soft)">(opcional)</span></label>
-          <textarea id="f-mensaje" name="mensaje"></textarea>
-        </div>
+    <form class="form" id="form-contacto" data-to="correo@empresa.com" novalidate data-reveal>
+      <div class="form__head"><h2>Agenda tu consulta</h2><p>Completa el formulario y nos pondremos en contacto contigo.</p></div>
+      <fieldset class="chips">
+        <legend>Soy</legend>
+        <label><input type="radio" name="perfil" value="Persona / familia" checked /><span>Persona / familia</span></label>
+        <label><input type="radio" name="perfil" value="Dueño de negocio" /><span>Dueño de negocio</span></label>
+        <label><input type="radio" name="perfil" value="Contribuyente extranjero" /><span>Contribuyente extranjero</span></label>
+      </fieldset>
+      <div class="field-row">
+        <div class="field"><input id="f-nombre" name="nombre" type="text" autocomplete="name" placeholder=" " required /><label for="f-nombre">Nombre completo</label><span class="field__err">Escribe tu nombre</span></div>
+        <div class="field"><input id="f-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+()\-\s]{7,}" placeholder=" " required /><label for="f-telefono">Teléfono</label><span class="field__err">Teléfono no válido</span></div>
       </div>
-
-      <div class="form__foot">
-        <small><svg class="ic"><use href="#i-lock"/></svg>Tu información es confidencial.</small>
-        <button class="btn btn--primary btn--lg" type="submit">Enviar solicitud <svg class="ic"><use href="#i-arrow"/></svg></button>
+      <div class="field"><input id="f-correo" name="correo" type="email" autocomplete="email" placeholder=" " required /><label for="f-correo">Correo electrónico</label><span class="field__err">Correo no válido</span></div>
+      <div class="field field--select">
+        <select id="f-servicio" name="servicio" required>
+          <option value="">Selecciona un servicio</option>
+          <optgroup label="Servicios"><option>Contabilidad</option><option>Nómina</option><option>Sales Tax</option><option>Impuestos personales</option><option>Impuestos empresariales</option><option>Resolución de problemas de impuestos</option><option>Estrategias fiscales</option><option>Servicios de notaría</option></optgroup>
+          <optgroup label="Trámites"><option>Creación y registro de empresas</option><option>Solicitud y renovación de ITIN</option><option>Cierre y disolución de empresas</option></optgroup>
+          <optgroup label="Impuestos internacionales"><option>Declaración personal con ingresos internacionales</option><option>Declaración empresarial con socios extranjeros</option><option>Asesoría en requisitos de ley internacionales</option></optgroup>
+          <option>Otro / No estoy seguro</option>
+        </select>
+        <label for="f-servicio">¿En qué te podemos ayudar?</label><span class="field__err">Elige una opción</span>
       </div>
-      <p class="form__ok" role="status">¡Gracias! Se abrió tu correo con el mensaje listo para enviar. Si no se abrió, escríbenos a correo@empresa.com o llámanos al (XXX) XXX-XXXX.</p>
+      <fieldset class="chips">
+        <legend>Prefiero que me contacten por</legend>
+        <label><input type="radio" name="canal" value="Llamada" checked /><span>Llamada</span></label>
+        <label><input type="radio" name="canal" value="WhatsApp" /><span>WhatsApp</span></label>
+        <label><input type="radio" name="canal" value="Correo" /><span>Correo</span></label>
+      </fieldset>
+      <div class="field"><textarea id="f-mensaje" name="mensaje" rows="3" placeholder=" "></textarea><label for="f-mensaje">Cuéntanos tu caso (opcional)</label></div>
+      <button class="btn btn--dark btn--block" type="submit"><span class="btn__text">Enviar solicitud</span><span class="btn__icon"><svg class="ic"><use href="#i-ne"/></svg></span></button>
+      <p class="form__note">Tu información es confidencial. Al enviar se abrirá tu correo con el mensaje listo.</p>
+      <p class="form__ok" role="status">¡Gracias! Si tu correo no se abrió, escríbenos a correo@empresa.com o llámanos al (XXX) XXX-XXXX.</p>
     </form>
   </div>
 </section>
 </main>
-<footer class="footer on-dark">
+<footer class="footer">
   <div class="container">
     <div class="footer__top">
       <div class="footer__brand">
-        <a class="brand brand--light" href="./" aria-label="All in One Professional Services — Inicio">
+        <a class="brand" href="./" aria-label="All in One Professional Services — Inicio">
           <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
-          <span class="brand__text"><b>All in One</b><small>Professional Services</small></span>
+          <span class="brand__name"><b>All in One</b><small>Professional Services</small></span>
         </a>
-        <p>Contabilidad, impuestos y trámites para personas y negocios. Todo lo que necesitas, con un solo equipo que te conoce.</p>
-        <div class="social">
-          <a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-facebook"/></svg></a>
-          <a href="#" aria-label="Instagram"><svg class="ic"><use href="#i-instagram"/></svg></a>
-          <a href="#" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a>
-        </div>
+        <p>Contabilidad, impuestos y trámites para familias y negocios. Un solo equipo que conoce tu historia completa.</p>
       </div>
-
       <nav class="footer__col" aria-label="Servicios">
-        <h2>Servicios</h2>
+        <small>Servicios</small>
         <a href="servicios.html#contabilidad">Contabilidad</a>
         <a href="servicios.html#nomina">Nómina</a>
         <a href="servicios.html#sales-tax">Sales Tax</a>
@@ -319,48 +280,42 @@
         <a href="servicios.html#impuestos-empresariales">Impuestos empresariales</a>
         <a href="servicios.html#resolucion">Resolución de problemas</a>
         <a href="servicios.html#estrategias">Estrategias fiscales</a>
-        <a href="servicios.html#notaria">Servicios de notaría</a>
+        <a href="servicios.html#notaria">Notaría</a>
       </nav>
-
       <nav class="footer__col" aria-label="Trámites e internacional">
-        <h2>Trámites</h2>
+        <small>Trámites</small>
         <a href="tramites.html#creacion-empresas">Creación de empresas</a>
         <a href="tramites.html#itin">ITIN</a>
         <a href="tramites.html#cierre-empresas">Cierre de empresas</a>
-        <h2 class="footer__h-gap">Internacional</h2>
+        <small style="margin-top:22px">Internacional</small>
         <a href="impuestos-internacionales.html#personales">Ingresos internacionales</a>
         <a href="impuestos-internacionales.html#socios-extranjeros">Socios extranjeros</a>
         <a href="impuestos-internacionales.html#asesoria">Asesoría legal</a>
       </nav>
-
       <div class="footer__col">
-        <h2>Contacto</h2>
-        <a class="footer__contact" href="tel:+10000000000"><svg class="ic"><use href="#i-phone"/></svg>(XXX) XXX-XXXX</a>
-        <a class="footer__contact" href="mailto:correo@empresa.com"><svg class="ic"><use href="#i-mail"/></svg>correo@empresa.com</a>
-        <p class="footer__contact"><svg class="ic"><use href="#i-pin"/></svg><span>Dirección de la oficina<br />Ciudad, TX 00000</span></p>
-        <p class="footer__contact"><svg class="ic"><use href="#i-clock"/></svg>Lunes a Viernes · 9:00 am – 6:00 pm</p>
-        <a class="footer__link-strong" href="quienes-somos.html">Conoce al equipo <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <small>Contacto</small>
+        <a href="tel:+10000000000">(XXX) XXX-XXXX</a>
+        <a href="mailto:correo@empresa.com">correo@empresa.com</a>
+        <span>Dirección de la oficina, Ciudad, TX 00000</span>
+        <span>Lunes a Viernes · 9:00 am – 6:00 pm</span>
+        <small style="margin-top:22px">Síguenos</small>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
       </div>
     </div>
-
-    <div class="footer__big" aria-hidden="true"><span>All in <em>One</em></span></div>
-
+    <div class="footer__big" aria-hidden="true"><span>All in</span><span>One</span></div>
     <div class="footer__bottom">
-      <p>© 2026 All in One Professional Services. Todos los derechos reservados.</p>
-      <p class="footer__note">La información de este sitio es general y no constituye asesoría legal o fiscal para tu caso. Agenda una consulta para revisarlo con nosotros.</p>
+      <p>© 2026 All in One Professional Services</p>
+      <p>La información de este sitio es general y no constituye asesoría legal o fiscal para tu caso.</p>
     </div>
   </div>
 </footer>
 
-<a class="fab" href="https://wa.me/10000000000" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
-  <svg class="ic"><use href="#i-whatsapp"/></svg>
-</a>
+<a class="wa-float" href="https://wa.me/10000000000" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg class="ic"><use href="#i-whatsapp"/></svg></a>
 
 <script src="assets/vendor/gsap.min.js" defer></script>
 <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="assets/vendor/lenis.min.js" defer></script>
 <script src="assets/js/main.js" defer></script>
-<script src="assets/js/motion.js" defer></script>
-</body>
-</html>
 
