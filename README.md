@@ -52,7 +52,7 @@ python3 -m http.server 8080
 
 ## Animaciones
 
-- Preloader con contador (solo en la primera página de la sesión)
+- Loader de 1.2 s (el logo se dibuja como una gráfica y la pantalla se abre en dos); sale solo la primera vez que alguien entra al sitio
 - Hero con zoom de la foto, títulos por líneas y palabras que rotan (“en regla / al día / en orden / sin estrés”)
 - Scroll suave con Lenis y parallax en heroes e imágenes
 - Navegación que se oculta al bajar y reaparece al subir

@@ -169,7 +169,6 @@
   if (motion) {
     const expo = "expo.out";
     const pre = $(".preloader");
-    const num = $(".preloader__num");
     const showPre = root.classList.contains("intro") && pre;
     lock(true);
 
@@ -184,15 +183,20 @@
     gsap.set("[data-hero]", { y: 30, autoAlpha: 0 });
     gsap.set(nav, { yPercent: -100, autoAlpha: 0 });
 
-    const t = showPre ? 0.9 : 0;
+    // El loader completo dura 1.2 s; el hero empieza a aparecer mientras se abre.
+    const t = showPre ? 0.8 : 0;
     const intro = gsap.timeline({ paused: true });
     if (showPre) {
-      const c = { v: 0 };
+      // 1) el círculo se dibuja, 2) las barras suben como una gráfica (la dorada al final),
+      // 3) aparece el nombre letra por letra, 4) la pantalla se abre en dos hacia arriba y abajo
       intro
-        .to(c, { v: 100, duration: 0.75, ease: "power2.inOut", onUpdate: () => (num.textContent = Math.round(c.v)) }, 0)
-        .to(".preloader__line", { scaleX: 1, duration: 0.75, ease: "power2.inOut" }, 0)
-        .to(".preloader__center, .preloader__top, .preloader__bottom", { autoAlpha: 0, y: -30, duration: 0.3, stagger: 0.03, ease: "power2.in" }, 0.72)
-        .to(pre, { yPercent: -100, duration: 0.8, ease: "expo.inOut" }, 0.8);
+        .to(".pl-ring", { strokeDashoffset: 0, duration: 0.45, ease: "power2.inOut" }, 0)
+        .to(".pl-bar", { strokeDashoffset: 0, duration: 0.3, stagger: 0.06, ease: "power3.out" }, 0.15)
+        .fromTo(".preloader__word span", { y: 0, yPercent: 105 }, { yPercent: 0, duration: 0.45, stagger: 0.02, ease: "expo.out" }, 0.25)
+        .to(".preloader__tag", { opacity: 1, duration: 0.3, ease: "power2.out" }, 0.4)
+        .to(".preloader__center", { scale: 0.94, autoAlpha: 0, duration: 0.2, ease: "power2.in" }, 0.68)
+        .to(".preloader__panel--top", { yPercent: -100, duration: 0.45, ease: "expo.inOut" }, 0.75)
+        .to(".preloader__panel--bottom", { yPercent: 100, duration: 0.45, ease: "expo.inOut" }, 0.75);
     }
     intro
       .to(heroImg, { scale: 1, duration: 2.2, ease: expo }, t + 0.05)
@@ -202,13 +206,12 @@
       .to("[data-hero]", { y: 0, autoAlpha: 1, duration: 1.2, stagger: 0.08, ease: expo }, t + 0.5)
       .to(nav, { yPercent: 0, autoAlpha: 1, duration: 1.1, ease: expo, clearProps: "transform,opacity,visibility" }, t + 0.4)
       .add(() => {
-        try { sessionStorage.setItem("aio-intro", "1"); } catch (e) {}
         pre?.remove();
         root.classList.remove("intro");
         lock(false);
         startRotator();
         ScrollTrigger.refresh();
-      }, t + 0.5);
+      }, showPre ? 1.2 : t + 0.5);
     gsap.set($$(".phero .hero__media img"), { scale: 1.25 });
 
     let started = false;

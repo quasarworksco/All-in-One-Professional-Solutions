@@ -1,12 +1,19 @@
 <!-- @include icons -->
 
 <div class="preloader" aria-hidden="true">
-  <div class="preloader__top"><span>All in One Professional Services</span><span>Contabilidad · Impuestos · Trámites</span></div>
+  <span class="preloader__panel preloader__panel--top"></span>
+  <span class="preloader__panel preloader__panel--bottom"></span>
   <div class="preloader__center">
-    <svg class="preloader__mark" viewBox="0 0 48 48" fill="none" stroke-linecap="round"><circle cx="24" cy="24" r="19" stroke="#fff" stroke-width="2.4"/><path d="M15 31v-4M21 31v-9M27 31V18" stroke="#fff" stroke-width="3"/><path d="M33 31V13" stroke="#c9a45c" stroke-width="3"/></svg>
+    <svg class="preloader__mark" viewBox="0 0 48 48" fill="none" stroke-linecap="round">
+      <circle class="pl-ring" cx="24" cy="24" r="19" stroke="#fff" stroke-width="2.4"/>
+      <line class="pl-bar" x1="15" y1="31" x2="15" y2="27" stroke="#fff" stroke-width="3"/>
+      <line class="pl-bar" x1="21" y1="31" x2="21" y2="22" stroke="#fff" stroke-width="3"/>
+      <line class="pl-bar" x1="27" y1="31" x2="27" y2="18" stroke="#fff" stroke-width="3"/>
+      <line class="pl-bar" x1="33" y1="31" x2="33" y2="13" stroke="#c9a45c" stroke-width="3"/>
+    </svg>
+    <p class="preloader__word"><span>A</span><span>l</span><span>l</span><span>&nbsp;</span><span>i</span><span>n</span><span>&nbsp;</span><span class="is-light">O</span><span class="is-light">n</span><span class="is-light">e</span></p>
+    <p class="preloader__tag">Professional Services</p>
   </div>
-  <div class="preloader__bottom"><span>Cargando</span><span class="preloader__count"><span class="preloader__num">0</span><small>%</small></span></div>
-  <span class="preloader__line"></span>
 </div>
 
 <div class="cursor is-hidden" aria-hidden="true">
