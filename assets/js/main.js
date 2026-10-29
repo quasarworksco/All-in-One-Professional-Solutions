@@ -183,20 +183,20 @@
     gsap.set("[data-hero]", { y: 30, autoAlpha: 0 });
     gsap.set(nav, { yPercent: -100, autoAlpha: 0 });
 
-    // El loader completo dura 1.2 s; el hero empieza a aparecer mientras se abre.
-    const t = showPre ? 0.8 : 0;
+    // El loader completo dura 1.5 s; el hero empieza a aparecer mientras se abre.
+    const t = showPre ? 1 : 0;
     const intro = gsap.timeline({ paused: true });
     if (showPre) {
       // 1) el círculo se dibuja, 2) las barras suben como una gráfica (la dorada al final),
       // 3) aparece el nombre letra por letra, 4) la pantalla se abre en dos hacia arriba y abajo
       intro
-        .to(".pl-ring", { strokeDashoffset: 0, duration: 0.45, ease: "power2.inOut" }, 0)
-        .to(".pl-bar", { strokeDashoffset: 0, duration: 0.3, stagger: 0.06, ease: "power3.out" }, 0.15)
-        .fromTo(".preloader__word span", { y: 0, yPercent: 105 }, { yPercent: 0, duration: 0.45, stagger: 0.02, ease: "expo.out" }, 0.25)
-        .to(".preloader__tag", { opacity: 1, duration: 0.3, ease: "power2.out" }, 0.4)
-        .to(".preloader__center", { scale: 0.94, autoAlpha: 0, duration: 0.2, ease: "power2.in" }, 0.68)
-        .to(".preloader__panel--top", { yPercent: -100, duration: 0.45, ease: "expo.inOut" }, 0.75)
-        .to(".preloader__panel--bottom", { yPercent: 100, duration: 0.45, ease: "expo.inOut" }, 0.75);
+        .to(".pl-ring", { strokeDashoffset: 0, duration: 0.562, ease: "power2.inOut" }, 0)
+        .to(".pl-bar", { strokeDashoffset: 0, duration: 0.375, stagger: 0.075, ease: "power3.out" }, 0.188)
+        .fromTo(".preloader__word span", { y: 0, yPercent: 105 }, { yPercent: 0, duration: 0.562, stagger: 0.025, ease: "expo.out" }, 0.312)
+        .to(".preloader__tag", { opacity: 1, duration: 0.375, ease: "power2.out" }, 0.5)
+        .to(".preloader__center", { scale: 0.94, autoAlpha: 0, duration: 0.25, ease: "power2.in" }, 0.85)
+        .to(".preloader__panel--top", { yPercent: -100, duration: 0.562, ease: "expo.inOut" }, 0.938)
+        .to(".preloader__panel--bottom", { yPercent: 100, duration: 0.562, ease: "expo.inOut" }, 0.938);
     }
     intro
       .to(heroImg, { scale: 1, duration: 2.2, ease: expo }, t + 0.05)
@@ -211,7 +211,7 @@
         lock(false);
         startRotator();
         ScrollTrigger.refresh();
-      }, showPre ? 1.2 : t + 0.5);
+      }, showPre ? 1.5 : t + 0.5);
     gsap.set($$(".phero .hero__media img"), { scale: 1.25 });
 
     let started = false;
