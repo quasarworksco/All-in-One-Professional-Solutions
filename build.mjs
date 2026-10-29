@@ -17,6 +17,10 @@ import { fileURLToPath } from "node:url";
 
 const root = dirname(fileURLToPath(import.meta.url));
 const site = JSON.parse(readFileSync(join(root, "src/site.json"), "utf8"));
+// Permite publicar en otro hosting sin tocar site.json: Vercel pasa su dominio en
+// SITE_URL (ver vercel.json) y el sitio queda en la raíz, así que BASE_PATH es "/".
+if (process.env.SITE_URL) site.url = process.env.SITE_URL.replace(/\/$/, "");
+if (process.env.BASE_PATH) site.basePath = process.env.BASE_PATH;
 const partial = (name) => readFileSync(join(root, "src/partials", `${name}.html`), "utf8");
 
 function render(tpl, page) {
@@ -41,7 +45,7 @@ for (const file of pages) {
   if (!m) throw new Error(`${file}: falta el comentario <!--meta {...} -->`);
   const page = { path: file === "index.html" ? "" : file, bodyClass: "", ...JSON.parse(m[1]) };
   // La 404 se sirve desde cualquier ruta: necesita <base> para que los enlaces relativos funcionen.
-  page.extraHead = page.noindex ? '<meta name="robots" content="noindex" />\n<base href="/" />' : "";
+  page.extraHead = page.noindex ? `<meta name="robots" content="noindex" />\n<base href="${site.basePath || "/"}" />` : "";
   page.canonical = `${site.url}/${page.path}`;
   // Precarga la foto del hero de cada página para que aparezca sin parpadeo.
   page.preload = page.hero ? `<link rel="preload" as="image" href="assets/img/photos/${page.hero}" fetchpriority="high" />` : "";
@@ -59,3 +63,6 @@ writeFileSync(
     .join("\n")}\n</urlset>\n`
 );
 console.log("✓ sitemap.xml");
+
+writeFileSync(join(root, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`);
+console.log("✓ robots.txt");

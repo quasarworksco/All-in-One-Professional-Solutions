@@ -9,7 +9,8 @@ referencia del cliente) y el diseño usa el mismo lenguaje editorial que JP Real
 - líneas finas en lugar de tarjetas;
 - paleta de tinta verde casi negra, papel cálido y un oro discreto.
 
-Dominio: `allinone.dgp-link.com` (GitHub Pages, ver `CNAME`).
+Publicado en GitHub Pages: https://quasarworksco.github.io/All-in-One-Professional-Solutions/
+(si más adelante se usa un dominio propio, se agrega un archivo `CNAME` y se cambian `url` y `basePath` en `src/site.json`).
 
 ## Páginas
 
@@ -49,6 +50,15 @@ Para verlo en local:
 ```bash
 python3 -m http.server 8080
 ```
+
+## Publicar en Vercel (link gratis *.vercel.app)
+
+1. En vercel.com → **Add New… → Project** → importar `quasarworksco/All-in-One-Professional-Solutions`.
+2. No hay que configurar nada: `vercel.json` ya define el build (`node build.mjs`) y la carpeta de salida.
+   El build toma el dominio de Vercel automáticamente para las URLs canónicas, el sitemap y la 404.
+3. Cada push a `main` se publica solo.
+
+GitHub Pages sigue funcionando en paralelo con su propia dirección.
 
 ## Animaciones
 
