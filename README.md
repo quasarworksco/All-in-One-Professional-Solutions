@@ -16,13 +16,14 @@ Publicado en GitHub Pages: https://quasarworksco.github.io/All-in-One-Profession
 
 | Página | Archivo | Contenido |
 | --- | --- | --- |
-| Inicio | `index.html` | Hero con foto y palabras que rotan, promesa, 8 servicios en filas con vista previa, marquesina, trámites, por qué elegirnos, internacional, galería horizontal “A quién ayudamos”, quiénes somos, proceso, FAQ y banda final |
-| Quiénes Somos | `quienes-somos.html` | Historia, grupo de trabajo con biografías, misión, visión y valores |
-| Servicios | `servicios.html` | Contabilidad, Nómina, Sales Tax, Impuestos personales, Impuestos empresariales, Resolución de problemas, Estrategias fiscales y Notaría |
-| Trámites | `tramites.html` | Creación y registro de empresas, Solicitud y renovación de ITIN, Cierre y disolución de empresas |
-| Impuestos Internacionales | `impuestos-internacionales.html` | Personas con ingresos internacionales, empresas con socios extranjeros y asesoría en requisitos de ley |
+| Inicio | `index.html` | Hero “Soluciones contables y fiscales para hacer crecer tu negocio”, 4 áreas de servicio, trámites, por qué elegirnos, International Tax Services, a quién ayudamos, quiénes somos, proceso, FAQ y banda final |
+| Quiénes Somos | `quienes-somos.html` | Historia, equipo (6 personas), misión, visión y valores |
+| Servicios | `servicios.html` | 1. Contabilidad y asesoría empresarial · 2. Preparación y planificación de impuestos · 3. Administración y cumplimiento empresarial · 4. Servicios tributarios especializados (incluye International Tax Services) |
+| Trámites | `tramites.html` | Creación y registro de empresas, ITIN, cierre y disolución de empresas, servicios de notaría |
 | Contacto | `contacto.html` | Datos de contacto y formulario (preselecciona el servicio desde cualquier botón “Cotizar/Agendar”) |
 | 404 | `404.html` | Página de error |
+
+`impuestos-internacionales.html` ya no es una página: redirige a Servicios → Servicios tributarios especializados.
 
 ## Cómo se edita
 
@@ -84,9 +85,9 @@ por fotos propias del cliente manteniendo el mismo nombre de archivo en `assets/
 ## Pendiente del cliente
 
 - [ ] Logo oficial (hoy se usa un isotipo provisional en SVG)
-- [ ] Dirección completa de la oficina en Richmond, TX, confirmar que el WhatsApp es el mismo teléfono y enlaces de redes → `src/site.json`
-- [ ] Nombres, cargos, fotos y biografías del equipo → `src/pages/quienes-somos.html`
-- [ ] Confirmar el notario asociado (Joshua) para Servicios de notaría
+- [ ] Dirección completa de la oficina en Richmond, TX y confirmar que el WhatsApp es el mismo teléfono → `src/site.json`
+- [ ] Fotos del equipo y foto grupal para la sección “Quiénes somos” del inicio
+- [ ] Apellido de Joshua (notario) y confirmar la ortografía de “Nirilu Valvuena”
 - [ ] Revisar textos de misión, visión y valores
 - [ ] Versión en inglés
 - [ ] Conectar el formulario a un CRM o correo (hoy abre el correo del visitante con el mensaje listo)
