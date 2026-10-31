@@ -87,7 +87,6 @@ por fotos propias del cliente manteniendo el mismo nombre de archivo en `assets/
 - [ ] Logo oficial (hoy se usa un isotipo provisional en SVG)
 - [ ] Dirección completa de la oficina en Richmond, TX y confirmar que el WhatsApp es el mismo teléfono → `src/site.json`
 - [ ] Fotos de Nirilu y Joshua, y foto grupal del equipo para la sección “Quiénes somos” del inicio
-- [ ] Confirmar la ortografía de “Nirilu Valvuena”
 - [ ] Revisar textos de misión, visión y valores
 - [ ] Versión en inglés
 - [ ] Conectar el formulario a un CRM o correo (hoy abre el correo del visitante con el mensaje listo)
