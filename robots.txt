@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://quasarworksco.github.io/All-in-One-Professional-Solutions/sitemap.xml
+Sitemap: https://www.allinoneadvisor.net/sitemap.xml
