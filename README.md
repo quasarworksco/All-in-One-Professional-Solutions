@@ -62,6 +62,18 @@ python3 -m http.server 8080
 
 GitHub Pages sigue funcionando en paralelo con su propia dirección.
 
+## Inglés (ES · EN)
+
+El botón **ES · EN** del menú lleva a la misma página en el otro idioma. La versión en inglés se
+genera sola en `/en/` al correr `node build.mjs`, a partir del español y del diccionario
+`src/i18n/en.json`:
+
+- `text`: cada texto o atributo en español → su traducción.
+- `html`: reemplazos de fragmentos completos, para frases que cambian de orden en inglés.
+
+Si se agrega o cambia un texto en español y no está en el diccionario, el build lo avisa con
+“⚠ Sin traducir”, y ese texto queda en español en `/en/` hasta agregarlo.
+
 ## Animaciones
 
 - Loader de 1.5 s (el logo se dibuja como una gráfica y la pantalla se abre en dos); sale solo la primera vez que alguien entra al sitio
@@ -89,5 +101,4 @@ por fotos propias del cliente manteniendo el mismo nombre de archivo en `assets/
 - [ ] Dirección completa de la oficina en Richmond, TX y confirmar que el WhatsApp es el mismo teléfono → `src/site.json`
 - [ ] Foto grupal del equipo para la sección “Quiénes somos” del inicio
 - [ ] Revisar textos de misión, visión y valores
-- [ ] Versión en inglés
 - [ ] Conectar el formulario a un CRM o correo (hoy abre el correo del visitante con el mensaje listo)

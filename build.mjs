@@ -11,7 +11,7 @@
 //   {{active:nav}}      → aria-current="page" si la página pertenece a ese menú
 //   <!-- @include nombre -->  → contenido de src/partials/nombre.html
 
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -36,8 +36,35 @@ function render(tpl, page) {
     .replace(/\{\{year\}\}/g, String(new Date().getFullYear()));
 }
 
+// Versión en inglés: se genera en /en/ a partir del HTML en español con el
+// diccionario src/i18n/en.json (textos y atributos). Lo que no esté en el
+// diccionario se avisa en consola para traducirlo.
+const en = JSON.parse(readFileSync(join(root, "src/i18n/en.json"), "utf8"));
+const missing = new Set();
+const SPANISH = /[áéíóúñ¿¡]|\b(el|la|los|las|de|del|y|para|tu|tus|con|que|en)\b/i;
+const tr = (str) => {
+  const t = str.trim();
+  if (!t) return str;
+  if (t in en.text) return str.replace(t, en.text[t]);
+  if (SPANISH.test(t) && /[a-zá-ú]{3}/i.test(t)) missing.add(t);
+  return str;
+};
+function toEnglish(html) {
+  for (const [a, b] of Object.entries(en.html)) html = html.split(a).join(b);
+  // Los <script> (JS y JSON-LD) no se traducen por texto
+  const scripts = [];
+  html = html.replace(/<script\b[\s\S]*?<\/script>/g, (m) => `\u0000${scripts.push(m) - 1}\u0000`);
+  html = html.replace(/>([^<>]+)</g, (m, txt) => ">" + tr(txt) + "<");
+  html = html.replace(/\u0000(\d+)\u0000/g, (m, i) => scripts[i]);
+  html = html.replace(/\b(alt|aria-label|title|placeholder|content|data-text|label|data-servicio|data-cursor)="([^"]*)"/g,
+    (m, k, v) => `${k}="${v.startsWith("http") ? v : tr(v)}"`);
+  // Rutas relativas a los recursos: /en/ está un nivel más abajo
+  return html.replace(/(["\s,])assets\//g, "$1../assets/");
+}
+
 const pages = readdirSync(join(root, "src/pages")).filter((f) => f.endsWith(".html"));
 const urls = [];
+mkdirSync(join(root, "en"), { recursive: true });
 
 for (const file of pages) {
   const raw = readFileSync(join(root, "src/pages", file), "utf8");
@@ -52,12 +79,28 @@ for (const file of pages) {
   page.ogAlt = page.ogAlt || `${site.name}: contabilidad, impuestos y trámites en Richmond, TX`;
   // Precarga la foto del hero de cada página para que aparezca sin parpadeo.
   page.preload = page.hero ? `<link rel="preload" as="image" href="assets/img/photos/${page.hero}" fetchpriority="high" />` : "";
+  const enUrl = `${site.url}/en/${page.path}`;
+  const bilingual = !page.noindex;
+  page.hreflang = bilingual
+    ? `<link rel="alternate" hreflang="es" href="${page.canonical}" />\n<link rel="alternate" hreflang="en" href="${enUrl}" />\n<link rel="alternate" hreflang="x-default" href="${page.canonical}" />`
+    : "";
   const body = raw.slice(m[0].length);
-  const html = render(`<!-- @include head -->\n<!-- @include header -->\n<main id="contenido">\n${body}</main>\n<!-- @include footer -->\n`, page);
-  writeFileSync(join(root, file), html);
-  if (!page.noindex) urls.push(page.canonical);
+  const tpl = `<!-- @include head -->\n<!-- @include header -->\n<main id="contenido">\n${body}</main>\n<!-- @include footer -->\n`;
+
+  // Español (raíz)
+  const es = { ...page, lang: "es", locale: "es_US", localeAlt: "en_US", altHref: bilingual ? `en/${page.path}` : "en/", esOn: " is-on", enOn: "" };
+  writeFileSync(join(root, file), render(tpl, es));
+  if (bilingual) urls.push(page.canonical);
   console.log("✓", file);
+
+  // Inglés (/en/)
+  if (!bilingual) continue;
+  const enPage = { ...page, canonical: enUrl, lang: "en", locale: "en_US", localeAlt: "es_US", altHref: `../${page.path}`, esOn: "", enOn: " is-on", preload: page.preload.replace('href="assets/', 'href="../assets/') };
+  writeFileSync(join(root, "en", file), toEnglish(render(tpl, enPage)));
+  urls.push(enUrl);
+  console.log("✓ en/" + file);
 }
+if (missing.size) console.warn(`⚠ Sin traducir (${missing.size}):\n  ` + [...missing].join("\n  "));
 
 writeFileSync(
   join(root, "sitemap.xml"),
