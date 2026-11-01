@@ -650,3 +650,12 @@ body.nav-hidden .subnav { top: 0; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
 }
 .badge svg.brand__mark { fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Selector de idioma ES · EN */
+.lang { position: relative; z-index: 2; display: inline-flex; align-items: center; gap: 2px; padding: 4px; border-radius: 999px; border: 1px solid rgba(255,255,255,.35); font-size: 12px; font-weight: 600; letter-spacing: .06em; transition: border-color .4s; }
+.lang:hover { border-color: rgba(255,255,255,.8); }
+.lang__opt { display: grid; place-items: center; min-width: 32px; height: 28px; padding: 0 8px; border-radius: 999px; color: rgba(255,255,255,.65); transition: background .4s var(--ease), color .4s; }
+.lang__opt.is-on { background: var(--white); color: var(--ink); }
+.lang:hover .lang__opt:not(.is-on) { color: var(--white); }
+.mmenu__foot .lang { margin-right: auto; }
+@media (max-width: 1180px) { .nav > .lang { margin-left: auto; } .brand { margin-right: 0; } }

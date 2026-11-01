@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<script>
+  // "js" habilita los estados iniciales de animación; "intro" muestra el preloader
+  // solo la primera vez que alguien entra al sitio (queda guardado en localStorage).
+  (function (d) {
+    d.classList.add("js");
+    try {
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches && !localStorage.getItem("aio-intro")) {
+        d.classList.add("intro");
+        localStorage.setItem("aio-intro", "1");
+      }
+    } catch (e) {}
+  })(document.documentElement);
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Services — Accounting, taxes and compliance | All in One Professional Services</title>
+<meta name="description" content="Accounting &amp; business advisory, tax preparation &amp; planning, business administration &amp; compliance, and specialized tax services: IRS letters, ITIN and international taxes." />
+<meta name="theme-color" content="#0b1310" />
+<link rel="canonical" href="https://www.allinoneadvisor.net/en/servicios.html" />
+<link rel="alternate" hreflang="es" href="https://www.allinoneadvisor.net/servicios.html" />
+<link rel="alternate" hreflang="en" href="https://www.allinoneadvisor.net/en/servicios.html" />
+<link rel="alternate" hreflang="x-default" href="https://www.allinoneadvisor.net/servicios.html" />
+
+
+<!-- Open Graph (Facebook, WhatsApp, LinkedIn, iMessage) -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="All in One Professional Services" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="es_US" />
+<meta property="og:url" content="https://www.allinoneadvisor.net/en/servicios.html" />
+<meta property="og:title" content="Services — Accounting, taxes and compliance | All in One Professional Services" />
+<meta property="og:description" content="Accounting &amp; business advisory, tax preparation &amp; planning, business administration &amp; compliance, and specialized tax services: IRS letters, ITIN and international taxes." />
+<meta property="og:image" content="https://www.allinoneadvisor.net/assets/img/og/servicios.jpg" />
+<meta property="og:image:secure_url" content="https://www.allinoneadvisor.net/assets/img/og/servicios.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="All in One Professional Services: accounting, taxes, compliance and specialized services" />
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Services — Accounting, taxes and compliance | All in One Professional Services" />
+<meta name="twitter:description" content="Accounting &amp; business advisory, tax preparation &amp; planning, business administration &amp; compliance, and specialized tax services: IRS letters, ITIN and international taxes." />
+<meta name="twitter:image" content="https://www.allinoneadvisor.net/assets/img/og/servicios.jpg" />
+<meta name="twitter:image:alt" content="All in One Professional Services: accounting, taxes, compliance and specialized services" />
+
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="preload" href="../assets/fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" as="image" href="../assets/img/photos/skyline2.webp" fetchpriority="high" />
+<link rel="stylesheet" href="../assets/css/styles.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "All in One Professional Services",
+  "url": "https://www.allinoneadvisor.net/",
+  "logo": "https://www.allinoneadvisor.net/assets/img/favicon.svg",
+  "telephone": "+19799006056",
+  "email": "ruben.melendez@allinoneadvisor.net",
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "address": { "@type": "PostalAddress", "addressLocality": "Richmond", "addressRegion": "TX", "addressCountry": "US" },
+  "availableLanguage": ["es", "en"],
+  "areaServed": "US",
+  "sameAs": ["https://www.instagram.com/allinoneadvisortax/", "https://www.facebook.com/allinoneadvisortax"],
+  "knowsAbout": ["Accounting", "Business advisory", "Tax preparation", "Tax planning", "Payroll", "Sales tax", "ITIN", "Company formation and closure", "International Tax Services", "Notary services"]
+}
+</script>
+</head>
+<body class="">
+<a class="skip" href="#contenido">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-logo" viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M15 31v-4M21 31v-9M27 31V18" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/><path d="M33 31V13" fill="none" stroke="var(--logo-accent,#c9a45c)" stroke-width="3.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-ledger" viewBox="0 0 24 24"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/><path d="M9 7.5h6M9 11h6M9 14.5h3"/></symbol>
+    <symbol id="i-payroll" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M17 6.5v9M19.5 8.2c-.4-.8-1.3-1.2-2.5-1.2-1.4 0-2.4.7-2.4 1.7 0 2.4 5 1.2 5 3.8 0 1-1.1 1.8-2.6 1.8-1.2 0-2.2-.5-2.6-1.3"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-2.5-1.6L13 21l-2-1.6L8.5 21 6 19.4z"/><path d="M9 8h6M9 11.5h6M9 15h4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V5.5L12 3v18M12 8.5l8 2.5v10"/><path d="M2.5 21h19M7.5 8.5h1M7.5 12h1M7.5 15.5h1M15.5 13.5h1M15.5 17h1"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.3 7.5 9.5 4.4-1.2 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12 2.2 2.2 4.3-4.4"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/><path d="M12 12 19 5M16 5h3v3"/></symbol>
+    <symbol id="i-stamp" viewBox="0 0 24 24"><path d="M9.5 13.5 9 9.5a3 3 0 1 1 6 0l-.5 4"/><path d="M5 13.5h14v3.5H5zM6.5 20.5h11"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5A1.5 1.5 0 0 1 10 4h4a1.5 1.5 0 0 1 1.5 1.5V7M3 12.5h18M10.5 12.5v1.5h3v-1.5"/></symbol>
+    <symbol id="i-idcard" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><circle cx="8.5" cy="11" r="2"/><path d="M5.5 16a3 3 0 0 1 6 0M14 10h4.5M14 13.5h3"/></symbol>
+    <symbol id="i-archive" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="4.5" rx="1"/><path d="M4.5 8.5V19a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V8.5"/><path d="m10 12.5 4 4M14 12.5l-4 4"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></symbol>
+    <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1.4 1.4 0 0 0 2-2"/><path d="m14 14 2.5 2.5a1.4 1.4 0 0 0 2-2l-3.8-3.8a3 3 0 0 0-4.2 0l-.9.9a1.4 1.4 0 0 1-2-2L10.4 7a5 5 0 0 1 6.3-.6l.5.3a2 2 0 0 0 1.5.3L21 6.5"/><path d="m21 15.5-2.5-1M3 6.5l2 .5M3 15l5.4 5.4a1.4 1.4 0 0 0 2-2"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M7 21h10M5 7h14M12 5V3"/><path d="m5 7-3 7a3.5 3.5 0 0 0 6 0zM19 7l-3 7a3.5 3.5 0 0 0 6 0z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M21 16.4v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.1 3.7 2 2 0 0 1 3.1 1.5h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.1 9.4a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-ne" viewBox="0 0 24 24"><path d="M7 17 17 7M8.5 7H17v8.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M7.5 13.5h2M11 13.5h2M14.5 13.5h2M7.5 17h2M11 17h2"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-12.4 7.6L3 21l1.4-5.4A8.5 8.5 0 1 1 21 12z"/><path d="M8.5 10.5h7M8.5 14h4"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3.5 20.5 4.8 16A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8.5c0 3.3 3.2 6.5 6.5 6.5l1-1.6-2-1-1 .9c-1.2-.5-2.2-1.5-2.8-2.8l.9-1-1-2z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.4 5.6a5 5 0 0 0-7.1 0L12 6.9l-1.3-1.3a5 5 0 0 0-7.1 7.1L12 21l8.4-8.3a5 5 0 0 0 0-7.1z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10.5" width="16" height="10.5" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3v5h5M8.5 13h7M8.5 16.5h5"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M15 3.5h-2.5A3.5 3.5 0 0 0 9 7v3H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7.5a1 1 0 0 1 1-1H15z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.5v.1M11.5 17v-6.5M11.5 13c0-1.6 1-2.6 2.5-2.6s2.5.9 2.5 2.6v4"/></symbol>
+  </defs>
+</svg>
+
+
+<div class="preloader" aria-hidden="true">
+  <span class="preloader__panel preloader__panel--top"></span>
+  <span class="preloader__panel preloader__panel--bottom"></span>
+  <div class="preloader__center">
+    <svg class="preloader__mark" viewBox="0 0 48 48" fill="none" stroke-linecap="round">
+      <circle class="pl-ring" cx="24" cy="24" r="19" stroke="#fff" stroke-width="2.4"/>
+      <line class="pl-bar" x1="15" y1="31" x2="15" y2="27" stroke="#fff" stroke-width="3"/>
+      <line class="pl-bar" x1="21" y1="31" x2="21" y2="22" stroke="#fff" stroke-width="3"/>
+      <line class="pl-bar" x1="27" y1="31" x2="27" y2="18" stroke="#fff" stroke-width="3"/>
+      <line class="pl-bar" x1="33" y1="31" x2="33" y2="13" stroke="#c9a45c" stroke-width="3"/>
+    </svg>
+    <p class="preloader__word"><span>A</span><span>l</span><span>l</span><span>&nbsp;</span><span>i</span><span>n</span><span>&nbsp;</span><span class="is-light">O</span><span class="is-light">n</span><span class="is-light">e</span></p>
+    <p class="preloader__tag">Professional Services</p>
+  </div>
+</div>
+
+<div class="cursor is-hidden" aria-hidden="true">
+  <span class="cursor__blob"></span><span class="cursor__dot"></span>
+  <span class="cursor__label"><span>View</span></span>
+</div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="./" aria-label="All in One Professional Services — Home">
+    <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+    <span class="brand__name"><b>All in One</b><small>Professional Services</small></span>
+  </a>
+
+  <ul class="nav__links">
+    <li class="nav__item"><a class="nav__link" href="quienes-somos.html"><span class="roll"><span data-text="About Us">About Us</span></span></a></li>
+    <li class="nav__item has-menu">
+      <button class="nav__link" type="button" aria-expanded="false" aria-controls="m-servicios" aria-current="page"><span class="roll"><span data-text="Services">Services</span></span><svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
+      <div class="menu" id="m-servicios">
+        <a class="menu__link" href="servicios.html#contabilidad"><small>01</small><b>Accounting &amp; business advisory</b><span>Bookkeeping, financial statements, analysis and consulting</span></a>
+        <a class="menu__link" href="servicios.html#impuestos"><small>02</small><b>Tax preparation &amp; planning</b><span>1040, 1065, 1120, 1120-S and tax planning</span></a>
+        <a class="menu__link" href="servicios.html#cumplimiento"><small>03</small><b>Business administration &amp; compliance</b><span>Payroll, sales tax, company formation and closing</span></a>
+        <a class="menu__link" href="servicios.html#especializados"><small>04</small><b>Specialized tax services</b><span>IRS letters, ITIN and international taxes</span></a>
+        <a class="menu__all" href="servicios.html">View all services <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </li>
+    <li class="nav__item has-menu">
+      <button class="nav__link" type="button" aria-expanded="false" aria-controls="m-tramites"><span class="roll"><span data-text="Filings">Filings</span></span><svg class="ic nav__chev"><use href="#i-chevron"/></svg></button>
+      <div class="menu" id="m-tramites">
+        <a class="menu__link" href="tramites.html#creacion-empresas"><small>01</small><b>Company formation &amp; registration</b><span>LLCs and corporations, with EIN</span></a>
+        <a class="menu__link" href="tramites.html#itin"><small>02</small><b>ITIN application &amp; renewal</b><span>Form W-7 from start to finish</span></a>
+        <a class="menu__link" href="tramites.html#cierre-empresas"><small>03</small><b>Company closure &amp; dissolution</b><span>Orderly closing with the state and the IRS</span></a>
+        <a class="menu__link" href="tramites.html#notaria"><small>04</small><b>Notary services</b><span>With an associated notary public</span></a>
+        <a class="menu__all" href="tramites.html">View all filings <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </li>
+  </ul>
+
+  <a class="lang" href="../servicios.html" aria-label="English / Español"><span class="lang__opt">ES</span><span class="lang__opt is-on">EN</span></a>
+  <a class="nav__cta" href="contacto.html#agenda">Book a consultation</a>
+  <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu"><span></span><span></span></button>
+</header>
+
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <nav class="mmenu__list" aria-label="Mobile menu">
+    <div class="mmenu__row"><a href="quienes-somos.html"><small>01</small>About Us</a></div>
+    <div class="mmenu__row">
+      <button type="button" aria-expanded="false"><small>02</small>Services<svg class="ic"><use href="#i-plus"/></svg></button>
+      <div class="mmenu__sub"><div>
+        <a href="servicios.html#contabilidad">Accounting &amp; business advisory</a><a href="servicios.html#impuestos">Tax preparation &amp; planning</a><a href="servicios.html#cumplimiento">Business administration &amp; compliance</a><a href="servicios.html#especializados">Specialized tax services</a>
+      </div></div>
+    </div>
+    <div class="mmenu__row">
+      <button type="button" aria-expanded="false"><small>03</small>Filings<svg class="ic"><use href="#i-plus"/></svg></button>
+      <div class="mmenu__sub"><div>
+        <a href="tramites.html#creacion-empresas">Company formation &amp; registration</a><a href="tramites.html#itin">ITIN application &amp; renewal</a><a href="tramites.html#cierre-empresas">Company closure &amp; dissolution</a><a href="tramites.html#notaria">Notary services</a>
+      </div></div>
+    </div>
+    <div class="mmenu__row"><a href="contacto.html"><small>04</small>Contact</a></div>
+  </nav>
+  <div class="mmenu__foot">
+    <a class="lang" href="../servicios.html" aria-label="English / Español"><span class="lang__opt">ES</span><span class="lang__opt is-on">EN</span></a>
+    <a href="tel:+19799006056">(979) 900-6056</a>
+    <a href="mailto:ruben.melendez@allinoneadvisor.net">ruben.melendez@allinoneadvisor.net</a>
+    <span>Mon – Fri · 9am – 6pm</span>
+  </div>
+</div>
+
+<main id="contenido">
+<section class="phero">
+  <div class="hero__media"><img src="../assets/img/photos/skyline2.webp" alt="Houston freeway and skyline at night" fetchpriority="high" decoding="async" /></div>
+  <div class="hero__shade"></div>
+  <div class="container phero__in">
+    <nav class="crumbs" aria-label="Breadcrumb" data-hero><a href="./">Home</a><span>/</span><span>Services</span></nav>
+    <h1 class="phero__title">Accounting and tax <em>solutions.</em></h1>
+    <div class="phero__foot" data-hero>
+      <p>Four areas so you can quickly find what you need: your accounting, your taxes, your company's compliance and specialized cases.</p>
+      <div class="phero__index"><a href="#contabilidad">Accounting</a><a href="#impuestos">Taxes</a><a href="#cumplimiento">Compliance</a><a href="#especializados">Specialized</a></div>
+    </div>
+  </div>
+</section>
+<nav class="subnav" aria-label="Services on this page"><div class="container subnav__in"><a href="#contabilidad"><small>01</small>Accounting</a><a href="#impuestos"><small>02</small>Taxes</a><a href="#cumplimiento"><small>03</small>Compliance</a><a href="#especializados"><small>04</small>Specialized</a></div></nav>
+
+<section class="svc" id="contabilidad">
+  <div class="container">
+    <div class="svc__top">
+      <div class="svc__num" data-reveal>01<span>Accounting &amp; business advisory</span></div>
+      <h2 class="svc__title" data-split>Accounting and advisory <em>for businesses.</em></h2>
+    </div>
+    <div class="svc__body">
+      <div class="svc__media"><div class="frame" data-curtain><img src="../assets/img/photos/contabilidad.webp" alt="Person reviewing financial reports with a calculator" loading="lazy" data-speed=".12" /></div></div>
+      <div>
+        <p class="svc__lead" data-reveal>We keep your business's books and turn them into information for decision-making: clear financial statements, analysis of your numbers and consulting to grow in an orderly way.</p>
+        <ul class="tags" data-reveal><li>New businesses</li><li>Small and medium-sized businesses</li><li>Contractors</li><li>Catch-up bookkeeping</li></ul>
+        <div class="svc__cols" data-reveal><div><h3>What's included</h3><ol class="ilist"><li>Monthly bookkeeping</li><li>Bank and credit card reconciliation</li><li>Financial statements (P&amp;L and balance sheet)</li><li>Financial analysis</li><li>Business consulting</li><li>Catch-up on overdue books</li></ol></div><div><h3>How it works</h3><ol class="ilist ilist--steps"><li><span><b>Assessment</b><span>We review the current state of your accounts.</span></span></li><li><span><b>Organization</b><span>We connect your accounts and set the calendar.</span></span></li><li><span><b>Reporting &amp; analysis</b><span>Every month you receive your financial statements and recommendations.</span></span></li></ol></div></div>
+        <div class="svc__actions"><a class="btn btn--dark magnetic" data-servicio="Accounting &amp; business advisory" href="contacto.html#agenda"><span class="btn__text">Get an accounting quote</span><span class="btn__icon"><svg class="ic"><use href="#i-ne"/></svg></span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svc" id="impuestos">
+  <div class="container">
+    <div class="svc__top">
+      <div class="svc__num" data-reveal>02<span>Tax preparation &amp; planning</span></div>
+      <h2 class="svc__title" data-split>Tax preparation <em>and planning.</em></h2>
+    </div>
+    <div class="svc__body">
+      <div class="svc__media"><div class="frame" data-curtain><img src="../assets/img/photos/personales.webp" alt="Couple signing documents at a desk" loading="lazy" data-speed=".12" /></div></div>
+      <div>
+        <p class="svc__lead" data-reveal>We prepare returns for individuals and companies, and plan all year long so you reach every deadline organized and without surprises.</p>
+        <ul class="tags" data-reveal><li>Individuals and families</li><li>LLC</li><li>Partnerships</li><li>S-Corp and C-Corp</li></ul>
+        <div class="svc__cols" data-reveal><div><h3>What's included</h3><ol class="ilist"><li>Form 1040 (federal and state)</li><li>Form 1065 for partnerships, with K-1</li><li>Form 1120 for corporations</li><li>Form 1120-S for S-Corporations</li><li>Year-round tax planning</li><li>Estimated payments, extensions and prior years</li></ol></div><div><h3>How it works</h3><ol class="ilist ilist--steps"><li><span><b>We gather your documents</b><span>We tell you exactly what we need.</span></span></li><li><span><b>Preparation</b><span>We prepare your return and explain it to you.</span></span></li><li><span><b>Planning</b><span>We leave you a plan for next year.</span></span></li></ol></div></div>
+        <div class="svc__actions"><a class="btn btn--dark magnetic" data-servicio="Tax preparation &amp; planning" href="contacto.html#agenda"><span class="btn__text">Book my tax return</span><span class="btn__icon"><svg class="ic"><use href="#i-ne"/></svg></span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svc" id="cumplimiento">
+  <div class="container">
+    <div class="svc__top">
+      <div class="svc__num" data-reveal>03<span>Business administration &amp; compliance</span></div>
+      <h2 class="svc__title" data-split>Administration and compliance <em>for businesses.</em></h2>
+    </div>
+    <div class="svc__body">
+      <div class="svc__media"><div class="frame" data-curtain><img src="../assets/img/photos/nomina.webp" alt="Business owner reviewing payroll on his laptop" loading="lazy" data-speed=".12" /></div></div>
+      <div>
+        <p class="svc__lead" data-reveal>We handle your company's day-to-day obligations—payroll, sales tax, registrations and closings—with timely compliance for every state and IRS deadline.</p>
+        <ul class="tags" data-reveal><li>Companies with employees</li><li>Retailers</li><li>New businesses</li><li>Businesses that are closing</li></ul>
+        <div class="svc__cols" data-reveal><div><h3>What's included</h3><ol class="ilist"><li>Payroll and payroll tax deposits</li><li>Forms 941, 940, W-2 and 1099</li><li>Sales tax: permit, calculation and filing</li><li>Company formation (LLCs and corporations)</li><li>Company closure &amp; dissolution</li><li>Timely compliance calendar</li></ol></div><div><h3>How it works</h3><ol class="ilist ilist--steps"><li><span><b>Setup</b><span>We register your company and its obligations.</span></span></li><li><span><b>Each period</b><span>We process and file on time.</span></span></li><li><span><b>Follow-up</b><span>We alert you before every deadline.</span></span></li></ol></div></div>
+        <div class="svc__actions"><a class="btn btn--dark magnetic" data-servicio="Business administration &amp; compliance" href="contacto.html#agenda"><span class="btn__text">Get a quote for my company</span><span class="btn__icon"><svg class="ic"><use href="#i-ne"/></svg></span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svc" id="especializados">
+  <div class="container">
+    <div class="svc__top">
+      <div class="svc__num" data-reveal>04<span>Specialized tax services</span></div>
+      <h2 class="svc__title" data-split>Specialized <em>tax services.</em></h2>
+    </div>
+    <div class="svc__body">
+      <div class="svc__media"><div class="frame" data-curtain><img src="../assets/img/photos/internacional.webp" alt="Passport on a world map" loading="lazy" data-speed=".12" /></div></div>
+      <div>
+        <p class="svc__lead" data-reveal>For cases that require more expertise: IRS letters, ITIN applications and renewals, and our International Tax Services for individuals and companies with international operations.</p>
+        <p class="note" data-reveal><svg class="ic"><use href="#i-globe"/></svg><span>International Tax Services: tax solutions for individuals and companies with international operations.</span></p>
+        <div class="svc__cols" data-reveal><div><h3>What's included</h3><ol class="ilist"><li>IRS and state letters and notices</li><li>Late returns and payment plans</li><li>ITIN application and renewal (W-7)</li><li>International taxes</li></ol></div><div><h3 id="internacional">International Tax Services</h3><ol class="ilist"><li>Returns for individuals with foreign income</li><li>LLCs with foreign owners</li><li>Information reporting for companies with foreign partners</li><li>Form 5472 and related returns, when applicable</li><li>Guidance on income effectively connected with the United States</li><li>Tax compliance for nonresidents</li></ol></div></div>
+        <div class="svc__actions"><a class="btn btn--dark magnetic" data-servicio="Specialized tax services" href="contacto.html#agenda"><span class="btn__text">Review my case</span><span class="btn__icon"><svg class="ic"><use href="#i-ne"/></svg></span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="band__media"><img src="../assets/img/photos/noche.webp" alt="" loading="lazy" decoding="async" /></div>
+  <div class="band__shade"></div>
+  <div class="band__content container">
+    <p class="label label--light">Your first consultation</p>
+    <h2 class="band__title" data-split>Tell us <em>about your case.</em></h2>
+    <p>In one call we review your situation and tell you what you need and what it costs. The initial consultation is free.</p>
+    <div class="band__actions">
+      <a class="btn btn--light magnetic" href="contacto.html#agenda"><span class="btn__text">Book a consultation</span><span class="btn__icon"><svg class="ic"><use href="#i-ne"/></svg></span></a>
+      <a class="btn btn--outline magnetic" href="tel:+19799006056"><span class="btn__text">(979) 900-6056</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="./" aria-label="All in One Professional Services — Home">
+          <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+          <span class="brand__name"><b>All in One</b><small>Professional Services</small></span>
+        </a>
+        <p>Accounting, taxes and filings for families and businesses. One team that knows your whole story.</p>
+      </div>
+      <nav class="footer__col" aria-label="Services">
+        <small>Services</small>
+        <a href="servicios.html#contabilidad">Accounting &amp; business advisory</a>
+        <a href="servicios.html#impuestos">Tax preparation &amp; planning</a>
+        <a href="servicios.html#cumplimiento">Business administration &amp; compliance</a>
+        <a href="servicios.html#especializados">Specialized tax services</a>
+        <small style="margin-top:22px">International Tax Services</small>
+        <a href="servicios.html#internacional">Individuals with foreign income</a>
+        <a href="servicios.html#internacional">LLCs with foreign owners</a>
+        <a href="servicios.html#internacional">Tax compliance guidance</a>
+      </nav>
+      <nav class="footer__col" aria-label="Filings">
+        <small>Filings</small>
+        <a href="tramites.html#creacion-empresas">Company formation</a>
+        <a href="tramites.html#itin">ITIN</a>
+        <a href="tramites.html#cierre-empresas">Company closure</a>
+        <a href="tramites.html#notaria">Notary</a>
+        <small style="margin-top:22px">About</small>
+        <a href="quienes-somos.html">About us</a>
+        <a href="quienes-somos.html#equipo">Our team</a>
+        <a href="contacto.html">Contact</a>
+      </nav>
+      <div class="footer__col">
+        <small>Contact</small>
+        <a href="tel:+19799006056">(979) 900-6056</a>
+        <a href="mailto:ruben.melendez@allinoneadvisor.net">ruben.melendez@allinoneadvisor.net</a>
+        <span>Richmond, TX</span>
+        <span>Monday to Friday · 9:00 am – 6:00 pm</span>
+        <small style="margin-top:22px">Follow us</small>
+        <a href="https://www.instagram.com/allinoneadvisortax/" target="_blank" rel="noopener">Instagram · @allinoneadvisortax</a>
+        <a href="https://www.facebook.com/allinoneadvisortax" target="_blank" rel="noopener">Facebook · @allinoneadvisortax</a>
+      </div>
+    </div>
+    <div class="footer__big" aria-hidden="true"><span>All in</span><span>One</span></div>
+    <div class="footer__bottom">
+      <p>© 2026 All in One Professional Services</p>
+      <a class="dgp-badge" href="https://dgpglobalgroup.com" target="_blank" rel="noopener" title="Web design &amp; hosting: DGP Global Group"><img src="../assets/img/dgp/logo-mark-48.webp" srcset="../assets/img/dgp/logo-mark-48.webp 1x, ../assets/img/dgp/logo-mark-96.webp 2x" alt="" width="20" height="20" loading="lazy" decoding="async" /><span>Powered by <b>DGP</b></span></a>
+      <p class="footer__note">The information on this site is general and does not constitute legal or tax advice for your case.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/19799006056" target="_blank" rel="noopener" aria-label="Message us on WhatsApp"><svg class="ic"><use href="#i-whatsapp"/></svg></a>
+
+<script src="../assets/vendor/gsap.min.js" defer></script>
+<script src="../assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="../assets/vendor/lenis.min.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+

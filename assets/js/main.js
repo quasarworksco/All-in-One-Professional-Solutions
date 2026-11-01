@@ -11,6 +11,7 @@
   const desktop = matchMedia("(min-width: 1181px)");
   const hasGsap = !!(window.gsap && window.ScrollTrigger);
   const motion = hasGsap && !reduced;
+  const EN = root.lang === "en";
 
   if (!motion) root.classList.add("no-motion");
   if (hasGsap) { gsap.registerPlugin(ScrollTrigger); gsap.config({ nullTargetWarn: false }); }
@@ -50,7 +51,7 @@
   const setMenu = (open) => {
     body.classList.toggle("menu-open", open);
     burger.setAttribute("aria-expanded", String(open));
-    burger.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+    burger.setAttribute("aria-label", open ? (EN ? "Close menu" : "Cerrar menú") : (EN ? "Open menu" : "Abrir menú"));
     mmenu.setAttribute("aria-hidden", String(!open));
     lock(open);
   };
@@ -420,17 +421,20 @@
     });
 
     const send = (data) => {
+      const L = EN
+        ? ["Name", "Phone", "Email", "Service", "I am", "Preferred contact", "Website inquiry"]
+        : ["Nombre", "Teléfono", "Correo", "Servicio", "Soy", "Prefiere contacto por", "Consulta web"];
       const lines = [
-        `Nombre: ${data.get("nombre")}`,
-        `Teléfono: ${data.get("telefono")}`,
-        `Correo: ${data.get("correo")}`,
-        `Servicio: ${data.get("servicio")}`,
-        `Soy: ${data.get("perfil") || "—"}`,
-        `Prefiere contacto por: ${data.get("canal") || "—"}`,
+        `${L[0]}: ${data.get("nombre")}`,
+        `${L[1]}: ${data.get("telefono")}`,
+        `${L[2]}: ${data.get("correo")}`,
+        `${L[3]}: ${data.get("servicio")}`,
+        `${L[4]}: ${data.get("perfil") || "—"}`,
+        `${L[5]}: ${data.get("canal") || "—"}`,
         "",
         data.get("mensaje") || "",
       ];
-      location.href = `mailto:${form.dataset.to}?subject=${encodeURIComponent(`Consulta web — ${data.get("servicio")}`)}&body=${encodeURIComponent(lines.join("\n"))}`;
+      location.href = `mailto:${form.dataset.to}?subject=${encodeURIComponent(`${L[6]} — ${data.get("servicio")}`)}&body=${encodeURIComponent(lines.join("\n"))}`;
     };
 
     form.addEventListener("submit", (e) => {

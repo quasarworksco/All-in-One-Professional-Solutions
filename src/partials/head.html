@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{page.lang}}">
 <head>
 <meta charset="UTF-8" />
 <script>
@@ -20,13 +20,14 @@
 <meta name="description" content="{{page.description}}" />
 <meta name="theme-color" content="#0b1310" />
 <link rel="canonical" href="{{page.canonical}}" />
+{{page.hreflang}}
 {{page.extraHead}}
 
 <!-- Open Graph (Facebook, WhatsApp, LinkedIn, iMessage) -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="{{site.name}}" />
-<meta property="og:locale" content="es_US" />
-<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale" content="{{page.locale}}" />
+<meta property="og:locale:alternate" content="{{page.localeAlt}}" />
 <meta property="og:url" content="{{page.canonical}}" />
 <meta property="og:title" content="{{page.title}}" />
 <meta property="og:description" content="{{page.description}}" />

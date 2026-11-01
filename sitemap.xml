@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.allinoneadvisor.net/contacto.html</loc></url>
+  <url><loc>https://www.allinoneadvisor.net/en/contacto.html</loc></url>
   <url><loc>https://www.allinoneadvisor.net/</loc></url>
+  <url><loc>https://www.allinoneadvisor.net/en/</loc></url>
   <url><loc>https://www.allinoneadvisor.net/quienes-somos.html</loc></url>
+  <url><loc>https://www.allinoneadvisor.net/en/quienes-somos.html</loc></url>
   <url><loc>https://www.allinoneadvisor.net/servicios.html</loc></url>
+  <url><loc>https://www.allinoneadvisor.net/en/servicios.html</loc></url>
   <url><loc>https://www.allinoneadvisor.net/tramites.html</loc></url>
+  <url><loc>https://www.allinoneadvisor.net/en/tramites.html</loc></url>
 </urlset>
