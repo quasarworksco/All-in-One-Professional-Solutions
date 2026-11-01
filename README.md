@@ -9,8 +9,9 @@ referencia del cliente) y el diseño usa el mismo lenguaje editorial que JP Real
 - líneas finas en lugar de tarjetas;
 - paleta de tinta verde casi negra, papel cálido y un oro discreto.
 
-Publicado en GitHub Pages: https://quasarworksco.github.io/All-in-One-Professional-Solutions/
-(si más adelante se usa un dominio propio, se agrega un archivo `CNAME` y se cambian `url` y `basePath` en `src/site.json`).
+Publicado en GitHub Pages con el dominio propio **https://www.allinoneadvisor.net** (archivo `CNAME`).
+El dominio está en Squarespace Domains: registros A de `@` a GitHub Pages y CNAME `www` → `quasarworksco.github.io`.
+No tocar los registros MX/TXT de Google (correo).
 
 ## Páginas
 
