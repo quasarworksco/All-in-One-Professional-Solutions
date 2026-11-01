@@ -47,6 +47,9 @@ for (const file of pages) {
   // La 404 se sirve desde cualquier ruta: necesita <base> para que los enlaces relativos funcionen.
   page.extraHead = page.noindex ? `<meta name="robots" content="noindex" />\n<base href="${site.basePath || "/"}" />` : "";
   page.canonical = `${site.url}/${page.path}`;
+  // Imagen para compartir en redes (assets/img/og/<slug>.jpg); la de inicio por defecto.
+  page.og = page.og || "inicio";
+  page.ogAlt = page.ogAlt || `${site.name}: contabilidad, impuestos y trámites en Richmond, TX`;
   // Precarga la foto del hero de cada página para que aparezca sin parpadeo.
   page.preload = page.hero ? `<link rel="preload" as="image" href="assets/img/photos/${page.hero}" fetchpriority="high" />` : "";
   const body = raw.slice(m[0].length);
